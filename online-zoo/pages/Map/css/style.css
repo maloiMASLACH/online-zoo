@@ -176,6 +176,10 @@ a.activehead:hover{
     padding: 0;
     margin-top: 2px;
 }
+.thecondSlider li.pet:hover{
+    transform: translateY(-10px);
+    transition: 0.4s;
+}
 .thecondSlider li.activeimg{
    padding: 0;
     background: linear-gradient(103.3deg, #07EEE0 -15.1%, #DF496D 92.15%);
@@ -211,7 +215,10 @@ a.activehead:hover{
     padding-right:7px ;
     padding-left: 10px;
 }
-
+.thecondSlider li.arrow:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
 .dearCounter{
     margin-left: -35px;
     margin-top: 1px;
@@ -290,8 +297,13 @@ a.activehead:hover{
     margin-left: 65.82%;
     margin-top: 17px;
 }
-.info3{
+
+.info{
     margin-left: -400px;
+    margin-top: 77px;
+}
+.info4{
+    margin-left: 30px;
     margin-top: 77px; 
 }
 .location{
@@ -330,7 +342,7 @@ a.activehead:hover{
     display: flex;
     opacity: 0;
 }
-.point3:hover .info3 {
+.point:hover .info {
     transition: 0.9s;
     opacity: 1;
 }
@@ -641,6 +653,9 @@ margin-top: -3px;
 }
 .soc li{
     margin-right: 9.5%;
+}
+.soc li:hover{
+transform: translateY(-5px);
 }
 .rightpart{
     margin: 0;
