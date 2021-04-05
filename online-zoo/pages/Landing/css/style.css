@@ -721,7 +721,7 @@ letter-spacing: 0.6px;
     opacity: 0;
     z-index: 2;
 }
-.petcover:hover{
+.pet:hover .petcover{
     opacity: 0.5;
     transition: 0.5s;
 }
