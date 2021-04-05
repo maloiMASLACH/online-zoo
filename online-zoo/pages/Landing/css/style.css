@@ -603,6 +603,7 @@ letter-spacing: 0.6px;
 .thecondSlider img.pet{
     height: 399px ;
     width: 278px;
+   
 }
 .thecondCounter{
     
@@ -675,6 +676,7 @@ letter-spacing: 0.6px;
     font-weight: bolder;
 }
 .petsInZooinf{
+    
     margin: 0;
     margin-top: 270px;
     margin-left: 1%;
@@ -693,11 +695,14 @@ letter-spacing: 0.6px;
     
 }
 .petInzoomove{
+    z-index: 3;
     position: absolute;
     margin-top: 130px;
     opacity: 0;
 }
+
 .pet:hover .petInzoomove{
+    
     transform: translateY(-130px);
     transition: 0.5s;
     opacity: 1;
@@ -706,6 +711,19 @@ letter-spacing: 0.6px;
     transform: translateY(130px);
     transition: 0.5s;
     opacity: 0;
+}
+.pet .petcover{
+    background-color:rgba(0,0,0);
+    height: 399px ;
+    width: 278px;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+.petcover:hover{
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 
