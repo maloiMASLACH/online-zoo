@@ -45,6 +45,7 @@ a{
     margin:0 auto;
     width: 1920px;
     justify-content: center;
+    
   
     
 }
@@ -1164,7 +1165,7 @@ fieldset:hover{
     border:0;
     resize: none;
     color: #E0E0E0 ;
-    
+   
 
 }
 .textmessage:hover{
@@ -1271,6 +1272,10 @@ margin-top: -3px;
 .centerpart a{
     text-decoration: none;
 }
+.centerpart p a{
+    text-decoration: none;
+    color: #FEFEFE;
+}
 .centerpart p:nth-child(5){
     margin: 0;
     margin-bottom: 20px;
@@ -1287,6 +1292,10 @@ margin-top: -3px;
 }
 .soc li{
     margin-right: 9.5%;
+}
+.soc li:hover{
+transform: translateY(-5px);
+transition: 0.4s;
 }
 .rightpart{
     margin: 0;

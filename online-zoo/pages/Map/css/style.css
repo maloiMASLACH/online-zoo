@@ -532,7 +532,7 @@ fieldset:hover{
     border:0;
     resize: none;
     color: #E0E0E0 ;
-    
+   
 
 }
 .textmessage:hover{
@@ -638,6 +638,10 @@ margin-top: -3px;
 }
 .centerpart a{
     text-decoration: none;
+}
+.centerpart p a{
+    text-decoration: none;
+    color: #FEFEFE;
 }
 .centerpart p:nth-child(5){
     margin: 0;

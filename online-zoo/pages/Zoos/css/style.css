@@ -572,6 +572,10 @@ margin-top: -3px;
 .centerpart a{
     text-decoration: none;
 }
+.centerpart p a{
+    text-decoration: none;
+    color: #FEFEFE;
+}
 .centerpart p:nth-child(5){
     margin: 0;
     margin-bottom: 20px;
