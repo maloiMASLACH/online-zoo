@@ -31,44 +31,35 @@ list-style-type: none;
 
 
 
-
-
-
 .first_part{
-    
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
-    
+    height: 94px;
 }
-.conteiner{
+.conteinerHead{
     margin:0 auto;
-    width: 1920px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    
-   
 }
 header{
-    
-    height: 94px;
+  
+    width: 1920px;
     display: flex;
-    
-    
     
 }
 .icon{
     margin-top: 26px;
     height: 42px;
-    margin-left: 7.76%;
+    margin-left: 7.86%;
 }
 ul.firstUL{
     list-style-type: none;
     display:inline-flex;
     align-items: center;
     justify-content:space-between;
-    margin-left:22.18%;
-    margin-top: 19px;
-    
-    
+    margin-left:22.17%;
+    margin-top: 41px;
+   
 }
 .firstUL li{
     font-size: 16px;
@@ -114,6 +105,8 @@ a.activehead:hover{
     font-size: 20px;
     
 }
+
+
 
 
 
