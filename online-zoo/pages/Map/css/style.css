@@ -38,6 +38,7 @@ a{
 .first_part{
     background-color: #FFFFFF;
     height: 94px;
+    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 .conteinerHead{
     margin:0 auto;
@@ -131,11 +132,18 @@ a.activehead:hover{
 
 .eight_part{
     height: 1279px;
-    background-color: rgb(251, 251, 251); 
+    background-color: rgb(251, 251, 251);
     margin-top: 8px;
+    
+}
+.conteinerMap{
+    margin:0 auto;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .map{
+    width: 1920px;
     padding-top: 50px;
 }
 .map h1{
@@ -274,30 +282,31 @@ a.activehead:hover{
      margin-top: 30.5px;
  }
 .mapImg{
+    width: 62.5%;
     padding-top: 60px;
-    padding-left: 18.75%;
+    margin-left: 18.75%;
 }
 .point1{
-    margin-left: 48.5%;
-    margin-top: -312px;
+    margin-left: 48.6%;
+    margin-top: -16.2%;
 }
 .point2{
     margin-left: 31.5%;
-    margin-top: -398px;
+    margin-top: -20.75%;
 }
 .point3{
     margin-left: 25.6%;
-    margin-top: -420px;
+    margin-top: -21.7%;
 }
 .point4{
-    margin-left: 65.82%;
-    margin-top: 17px;
+    margin-left: 65.9%;
+    margin-top: 0.88%;
 }
-
 .info{
     margin-left: -400px;
-    margin-top: 77px;
+    margin-top: 77px; 
 }
+
 .info4{
     margin-left: 30px;
     margin-top: 77px; 
@@ -308,22 +317,23 @@ a.activehead:hover{
 }
 .icon-icon-marker{
     position: absolute;
-    font-size: 93px;
+    font-size: 590%;
     color: rgb(75, 215, 200);
     
 }
 .icon-icon-marker:hover{
     transition: 0.3s;
     color: red;
-    font-size: 93px;
+    font-size: 590%;
+    
    
 }
 .pointPic{
     position: absolute;
     padding: 0;
     margin: 12px 0px 0px -54px;
-    width: 43px;
-    height: 43px;
+    width: 62%;
+    height: 45%;
     border-radius: 50%;
     z-index: 2;
     
@@ -451,7 +461,7 @@ footer{
 .leftpart{
     
     padding: 0;
-    width: 600px;
+    width: 300px;
     padding-top: 100px;
     margin-left: 7.8%;
 }
@@ -586,7 +596,7 @@ margin-top: -3px;
 
 .centerpart{
     padding-top: 102px;
-    margin-left:   9.6%;
+    margin-left:   25.3%;
     margin-top: 0;
 }
 .footerlinks{
@@ -661,7 +671,7 @@ transition: 0.4s;
 .rightpart{
     margin: 0;
     padding: 0;
-   
+    margin-left: 18.9%;
 }
 .footerbtn{
     width: 275px;
@@ -669,7 +679,7 @@ transition: 0.4s;
     background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
     border-radius: 3px;
     margin-top: 100px;
-    margin-left: 132%;
+    
     display: flex;
     border: solid #49D6DF  ;
 }

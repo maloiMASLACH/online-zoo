@@ -34,6 +34,7 @@ list-style-type: none;
 .first_part{
     background-color: #FFFFFF;
     height: 94px;
+    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 .conteinerHead{
     margin:0 auto;
@@ -130,7 +131,7 @@ a.activehead:hover{
 
 .eight_part{
     
-    height: 1279px;
+    height: 902px;
     background-color: rgb(251, 251, 251); 
     margin-top: 8px;
     justify-content: center;
@@ -138,11 +139,12 @@ a.activehead:hover{
 }
 .conteiner2{
     margin:0 auto;
-    width: 1920px;
+    display: flex;
     justify-content: center;
     height: 830px;
 }
 .content{
+    width: 1920px;
     display: flex;
 }
 .slider{
@@ -306,7 +308,7 @@ margin-right: 3px;
     text-align: left;
     margin: 0;
     letter-spacing: 0;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
     width: 380px;
     font-size: 14px;
 line-height: 16px;
@@ -319,7 +321,7 @@ line-height: 16px;
     height: 55px;
     background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
     border-radius: 3px;
-    margin-top: 33px;
+    margin-top: 36px;
     display: flex;
     border: solid #49D6DF  ;
 }
