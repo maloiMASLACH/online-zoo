@@ -80,6 +80,7 @@ ul.firstUL{
 .firstUL a.activehead{
 text-decoration: underline;
 font-weight: 900;
+cursor:default;
 }
 a:hover{
     color:#55c3df;

@@ -35,10 +35,10 @@ a{
 
 
 
-
 .first_part{
     background-color: #FFFFFF;
     height: 94px;
+    overflow: hidden;
 }
 .conteinerHead{
     margin:0 auto;
@@ -80,9 +80,11 @@ ul.firstUL{
 .firstUL a.activehead{
 text-decoration: underline;
 font-weight: 900;
+cursor:default;
 }
 a:hover{
     color:#55c3df;
+    
 }
 a.activehead:hover{
     color:#333333;
@@ -90,7 +92,7 @@ a.activehead:hover{
 
 .switcher{
     margin-top: 15px;
-    margin-left: 41.5%;
+    margin-left: 41.65%;
 }
 .switcherBg{
     position: absolute;
@@ -124,11 +126,8 @@ a.activehead:hover{
 .thecond_part{
     
     background-image: url("../../../assets/images/mountains.png");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    
+    overflow: hidden;
     height: 940px;
 padding: 0;
 }
@@ -393,7 +392,7 @@ overflow: hidden;
     
     background-color: rgb(251, 251, 251);
     height: 883px;
-
+    overflow: hidden;
 }
 .conteinerSmall{
    
@@ -510,7 +509,7 @@ margin-top: 14px;
 .fourth_part{
     background-color: #F2F2F2;
     height: 413px;
- 
+    overflow: hidden;
 }
 .conteinerProblem{
     margin:0 auto;
@@ -575,6 +574,7 @@ letter-spacing: 0.1px;
 .fifth_part{
     background-color: rgb(251, 251, 251);
     height: 854px;
+    overflow: hidden;
 }
 .conteinerPets{
     margin:0 auto;
@@ -754,7 +754,8 @@ letter-spacing: 0.6px;
 
 .six_part{
     height: 754px;
-    background-color: #F2F2F2; ;
+    background-color: #F2F2F2; 
+    overflow: hidden;
 }
 .conteinerDon{
     margin:0 auto;
@@ -816,6 +817,7 @@ padding-top: 17px;
 .seven_part{
     height: 810px;
     background-color: rgb(251, 251, 251);
+    overflow: hidden;
 }
 .conteinerPeopl{
     margin:0 auto;
@@ -941,7 +943,8 @@ border: solid 1px gray;
 
 .eight_part{
     height: 904px;
-    background-color: #F2F2F2; ;
+    background-color: #F2F2F2; 
+    overflow: hidden;
 }
 .conteinerMap{
     margin:0 auto;
@@ -1107,6 +1110,7 @@ letter-spacing: 0.6px;
 .nine_part{
     height: 751px;
     background: rgba(51, 51, 51, 1);
+    overflow: hidden;
 
 }
 .footercon{
@@ -1391,4 +1395,78 @@ transition: 0.4s;
 }
 address a{
     text-decoration: none ;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) and (max-width:1920px){ 
+    header{
+        width: 1200px;
+    }
+    .icon{
+        margin-top: 26px;
+        height: 42px;
+        margin-left: 12.5%;
+    }
+    ul.firstUL{
+        margin-left:5.5%; 
+    }
+    .switcher{
+        margin-top: 15px;
+        margin-left: 36.45%;
+    }
+
+
+
+
+
+
+    .thecond_part{ 
+        height: 926px;
+    }
+    .conteinerWatch{
+        width: 1200px;
+    }
+    .watch{
+        padding:66px 0px 0px 12.55%;
+    }
+    .lineOnAnimalSlider{
+        
+    margin-top: 339px ;
+    margin-left:479px;
+
+    }
+    .animalsOnSlider{
+       margin: 0;
+    margin-left:593px;
+    margin-top: 100px;
+    }
+    .animalsOnSlider  ul{
+    
+        margin-top:-20px;
+    }
+    .animalsOnSlider  ul li{
+    
+        margin-right:-46px;
+    }
+    .animalsOnSlider  ul li.active{
+        padding-top:20px;
+        margin-left: 40px !important;
+    }
+    .animalsOnSlider ul li:not(.active) a img{
+       transform: scale(1.28);
+    }
+    .counternull{
+        margin-top: -1px !important;
+        margin-left: 59.1%;
+    }
+    .ponzynokNull{
+
+        margin-left: 59.1%;
+    }
 }
