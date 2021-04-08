@@ -264,6 +264,9 @@ a.activehead:hover{
     margin-top: -13px;
     margin-left: -33px;
 }
+.ponzynokThird:hover{
+    transform: scale(1.05);
+}
 .ponzynokThirdBlock{
     position: absolute;
     margin-right: 155px;

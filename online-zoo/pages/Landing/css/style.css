@@ -901,6 +901,9 @@ border: solid 1px gray;
     margin-top: -12.5px;
     padding-left: 2px;
 }
+.ponzynokThird:hover{
+    transform: scale(1.05);
+}
 .ponzynokThirdBlock{
     position: absolute;
     margin-right: 155px;
