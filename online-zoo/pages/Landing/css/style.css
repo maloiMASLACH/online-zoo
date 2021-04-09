@@ -283,7 +283,7 @@ width: 10px !important;
 }
 .lineOnAnimalSlider{
     position: absolute;
-width: 1087px;
+width: 56%;
 height: 13px;
 display: flex;
 margin-top: 234px ;
@@ -322,7 +322,7 @@ padding: 0;
 list-style-type: none;
 padding-top: 90px;
 margin-left:931px;
-overflow: hidden;
+
 
 }
 .animalsOnSlider ul{
@@ -715,18 +715,19 @@ letter-spacing: 0.6px;
 .petInzoomove{
     z-index: 3;
     position: absolute;
-    margin-top: 130px;
+    margin-top: -90px;
     opacity: 0;
+
 }
 
 .pet:hover .petInzoomove{
-    
-    transform: translateY(-130px);
+
+    transform: translateY(-130px) ;
     transition: 0.5s;
     opacity: 1;
 }
 .pet:not(:hover) .petInzoomove{
-    transform: translateY(130px);
+    transform: translateY(-90px);
     transition: 0.5s;
     opacity: 0;
 }
@@ -971,10 +972,10 @@ letter-spacing: 0.6px;
 .mapImg{
     padding-top: 60px;
     margin-left: 18.75%;
-    width: 62.5%;
+    width: 1200px;
+    height: 498px;
     
 }
-
 .point1{
     margin-left: 48.6%;
     margin-top: -16.2%;
@@ -991,8 +992,13 @@ letter-spacing: 0.6px;
     margin-left: 65.2%;
     margin-top: 0.88%;
 }
-.info3{
+.info{
     margin-left: -400px;
+    margin-top: 77px; 
+}
+
+.info4{
+    margin-left: 30px;
     margin-top: 77px; 
 }
 .location{
@@ -1000,6 +1006,7 @@ letter-spacing: 0.6px;
     
 }
 .icon-icon-marker{
+    z-index: 20;
     position: absolute;
     font-size: 590%;
     color: rgb(75, 215, 200);
@@ -1032,11 +1039,13 @@ letter-spacing: 0.6px;
     display: flex;
     opacity: 0;
 }
-.point3:hover .info3 {
+.point:hover .info {
     transition: 0.9s;
     opacity: 1;
+    z-index: 100;
 }
 .info:hover{
+    z-index: 1 !important;
     opacity: 0 !important;
 }
 .info img{
@@ -1464,6 +1473,19 @@ address a{
     .animalsOnSlider ul li:not(.active) a img{
        transform: scale(1.28);
     }
+    .animalShortInfo{
+        margin-top: 235px;
+        line-height: 16px;
+        margin-left: 22px;
+    }
+    .animalbtn{
+        margin-left: 16px;
+        margin-top: 286px;
+    }
+    .animalbtn2{
+        margin-left: 139px;
+        margin-top: 286px;
+    }
     .counternull{
         margin-top: -1px !important;
         margin-left: 59.1%;
@@ -1472,4 +1494,334 @@ address a{
 
         margin-left: 59.1%;
     }
+    .thecondUL{
+        margin-top: -101px;
+        padding-left: 151spx;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .conteinerSmall h1{
+    
+     margin-left: 23px;
+    }
+    .conteinerSmall p{
+    margin-left: 23px;
+      width: 750px;
+      line-height: 16.5px;
+    }
+    .conteinerSmall img{
+        margin-top: 0px;
+        margin-left: 22px;
+    width: 746px;
+    height: 323px;
+    }
+    
+    .ponzynokFirstBlock{
+    margin-right: 166px;
+    width: 82px;
+    }
+ 
+    .watchOnline2 img{
+    height: 32px;
+    width: 32px;
+    margin-left: 30px;
+    margin-top: 8px;
+    }
+    .watchOnline2 p{
+    margin:0;
+    margin-top: 17px;
+    margin-right: 21px;
+    }
+
+
+
+
+
+
+
+
+    .problemscon{
+        width: 1200px;
+    }
+    .problem{  
+     margin-left: 9.2%;
+
+    }
+    .problem li{
+    margin-right: 20.5px;
+    }
+    .problem img{
+    padding-left: 104px;
+    }
+    .problem h3{
+    margin-left: 0px;
+    letter-spacing: 0.2px;
+    }
+    .problem p{
+    width: 286px;
+    height: 64px;
+    margin-top: 16px;
+    }
+
+
+
+
+    
+
+    .fifth_part{
+    height: 752px;
+    }
+    .petsInZoo{
+    width: 1200px;
+    }
+    .petsInZoo h1{
+     padding-left: 39.8%;
+    }
+    .thecondSlider img.pet{
+        height: 301px ;
+        width: 210px;
+    }
+    .thecondSlider{
+        padding: 0;
+        padding-top: 0px;
+        margin-top: 33px;
+        margin-left: 18px;
+
+    }
+    .thecondSlider li.pet{
+        margin-right: 20px;
+    }
+    
+    .thecondSlider li.arrow{
+      
+        margin-right: 0px;
+        margin-left: -0px;
+        padding-top: 4px;
+        padding-right:18px ;
+        padding-left: 0px;
+    }
+    .pet .petcover{
+        background-color:rgba(0,0,0);
+        height: 301px ;
+        width: 210px;
+        border-radius: 5px;
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+    }
+    .petInzoomove{
+        margin-top: 43px;
+        margin-left: -10px;
+    }
+    .animalbtn{
+        width:140px ;
+        margin-left: 17px;
+    }
+    .animalbtn2{
+        margin-left: 135px !important;
+        width:50px ;
+    }
+    .dolar{
+        margin: 0;
+        margin-left: -25px;
+    }
+    .thecondCounter{
+        margin-top: -15px;
+        padding-top: 0;
+        padding-left: 6px;
+    }
+    .choose{
+        margin-left: 39.9%;
+    }
+    .choose p{
+        padding: 14px 0px 0 11px;
+    }
+    .ponzynokThecond{
+        margin-top: -14px;
+        padding-left: 10px;
+    }
+
+
+
+
+
+
+
+    .six_part{
+        height: 702px;
+    }
+    .donate{
+        width: 1200px;
+    }
+    .donate h1{
+        padding-left: 38.35%;
+    }
+    .donate ul{
+        padding-top: 35px;
+        padding-left: 11.1%;
+    }
+    .donate li{
+        margin-left: 1.6%;
+    }
+    .donate button{
+        margin-top: 56px;
+        
+    }
+    .donate button p{
+        letter-spacing: 0.8px;
+        font-weight: bolder;
+        margin: -3px 0 0 70px;
+    }
+    .smallArrow img{
+        height: 10px;
+        width: 48px;
+    }
+    .smallArrow{
+        margin-top: -8px;
+    }
+    .six_part .choose{
+        margin-top: 45px;
+    }
+    .six_part .choose p{
+        margin-top: 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .people{
+
+        width: 1200px;  
+    }
+    .people h1{
+        padding-left: 38.5%;
+    }
+    .people li div{
+        width: 440px;
+    }
+    .people ul{
+        margin-top: 19px;
+        margin-left: 5%;
+    }
+    .people li{
+     margin-right: 20px;
+    }
+    .people li:nth-child(2){
+        margin-right: 20px;
+        
+       }
+    .people li:nth-child(3){
+        margin-right: 20px;
+       }      
+   
+    .user1{
+    margin-left:187px ;
+    }
+    .user2{
+        margin-left:187px ;  
+    }
+    .users h3{
+        letter-spacing: 0.3px;  
+    }
+    .users p{
+        width: 330px;
+        text-align: left;
+        padding-top: 4px;
+        padding-left: 56px;
+        line-height: 16.5px;
+    }
+    .thirdCounter{
+        padding-top: 8px;
+    }
+    .ponzynokThird{
+        margin-top: -13px;
+    }
+    .people button{
+        margin-left: 39.7%;
+    }
+    .people button p{
+        margin: 0px 0 0 30px;
+    }
+
+
+
+
+
+    .eight_part{
+        height: 842px;
+    }
+    .map{
+        width: 1200px;
+    }
+    .map h1{
+        padding-left: 46.1%;
+    }
+    .mapImg{
+        margin-left: 12.45%;
+        width: 900px;
+        height:  436px;
+    }
+    
+    .point1{
+    margin-left: 47.5%;
+    margin-top: -23.8%;
+    }
+    .point2{
+        padding-top: 1%;
+    margin-left: 27%;
+    margin-top: -32%;
+    }
+    .point3{
+    margin-left: 19.5%;
+    margin-top: -1%;
+    }
+    .point4{
+    margin-left: 67.2%;
+    margin-top: 0.98%;
+    }
+    .info3{
+        margin-left: 16px;
+    }
+    .info2{
+        margin-left: -200px;
+
+    }
+    .info4{
+        margin-left: -130px;
+
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
