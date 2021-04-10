@@ -45,9 +45,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 header{
-  
+    overflow: hidden;
     width: 1920px;
     display: flex;
     
@@ -132,6 +133,7 @@ a.activehead:hover{
 padding: 0;
 }
 .conteinerFon{
+    
     margin:0 auto;
     display: flex;
     align-items: center;
@@ -139,6 +141,7 @@ padding: 0;
 }
 .conteinerWatch{
     width: 1920px;  
+    
 }
 .watch{
     
@@ -149,6 +152,7 @@ letter-spacing: 0.9px;
 
 }
 .thecondUL{
+    
     padding: 0;
     margin-top: -94px;
     padding-left: 152px;
@@ -472,7 +476,7 @@ margin-top: 14px;
     width: 245px;
     height: 55px;
     background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
-    border-radius: 3px;
+    border-radius:3px;
     margin-top: 40px;
     margin-left: 34.5%;
     display: flex;
@@ -715,7 +719,7 @@ letter-spacing: 0.6px;
 .petInzoomove{
     z-index: 3;
     position: absolute;
-    margin-top: -90px;
+    margin-top: 130px;
     opacity: 0;
 
 }
@@ -1138,20 +1142,77 @@ footer{
     
 }
 .footertop{
-    display: flex;
+    display: inline;
    
 }
 .leftpart{
-    
+    display: flex;
     padding: 0;
-    width: 600px;
+    width: 100%;
     padding-top: 100px;
     margin-left: 7.8%;
 }
 .leftpart img{
     width: 59px;
 }
-.leftpart h3{
+.footerlinks{
+    display: flex;
+    margin-top: 20px;
+   margin-left: 37.85%;
+}
+.footerlinks li{
+    margin-right: 46%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FEFEFE;
+    z-index: 100;
+}
+.footerlinks a{
+        color: #FEFEFE;
+        text-decoration: none; 
+}
+
+.footerlinks a:hover{
+    color: #49D6DF;
+    text-decoration: none;
+}
+.footerbtn{
+    width: 275px;
+    height: 55px;
+    background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+    border-radius: 3px;
+    margin-left: 18.8%;
+    display: flex;
+    border: solid #49D6DF  ;
+}
+.footerbtn:hover{
+    background: chocolate;
+    border: solid chocolate;
+}
+.footerbtn  p{
+    letter-spacing: 0.8px;
+    font-weight: bolder;
+    margin-top: 12px;
+    margin-left: 14px;
+    font-size: 17px !important;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    
+}
+
+
+
+
+.centerpart{
+   margin-left: 7.75%;
+    display: flex;
+}
+
+
+.centerpart h3{
     padding-top: 33px;
     padding-left: 2px;
     font-family: Roboto;
@@ -1219,8 +1280,6 @@ fieldset:hover{
     border:0;
     resize: none;
     color: #E0E0E0 ;
-   
-
 }
 .textmessage:hover{
     border:0;
@@ -1232,9 +1291,7 @@ fieldset:hover{
     margin-left:-6px ;
 }
 .checkbox{
-    width: 20px;
- 
-    
+    width: 20px;  
 }
 .footercheck label{
     font-size: 12px;
@@ -1271,41 +1328,11 @@ button[type="submit"] img{
 width: 48px;
 margin-top: -3px;
 }
-
-
-
-
-
-
-.centerpart{
-    padding-top: 102px;
-    margin-left:   9.6%;
-    margin-top: 0;
-}
-.footerlinks{
-    display: flex;
-   
-}
-.footerlinks li{
-    margin-right: 46%;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FEFEFE;
-    z-index: 100;
-}
-.footerlinks a{
-        color: #FEFEFE;
-        text-decoration: none;
-      
-}
-.footerlinks a:hover{
-    color: #49D6DF;
-    text-decoration: none;
+.footerInfo{
+    margin-left: 29.73%;
 }
 .centerpart h4{
-    margin-top: 75px;
-    margin-left: 20.5%;
+    margin-top: 54px;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -1316,15 +1343,10 @@ margin-top: -3px;
 .centerpart p{
     margin: 0;
     margin-bottom: 6px;
-    margin-left: 20.5%;
     padding: 0;
     width: 193px;
     text-align: left;
     color: #FEFEFE;
-    
-}
-.centerpart a{
-    text-decoration: none;
 }
 .centerpart p a{
     text-decoration: none;
@@ -1332,56 +1354,56 @@ margin-top: -3px;
 }
 .centerpart p:nth-child(5){
     margin: 0;
-    margin-bottom: 20px;
-    margin-left: 20.5%;
+    margin-top: 21px;
+margin-bottom: 7px;
     padding: 0;
     width: 193px;
     text-align: left;
     color: #FEFEFE;
 }
 .soc{
-    margin-top: 17px;
-    margin-right: 2px;
+    margin:0;
+    margin-left: -15%;
+    margin-top: 20px;
     align-items: center;
 }
 .soc li{
-    margin-right: 9.5%;
+    margin-right: 5.5%;
 }
 .soc li:hover{
 transform: translateY(-5px);
 transition: 0.4s;
 }
-.rightpart{
-    margin: 0;
-    padding: 0;
-   
-}
-.footerbtn{
+.footerbtn2{
     width: 275px;
     height: 55px;
     background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
     border-radius: 3px;
-    margin-top: 100px;
-    margin-left: 132%;
-    display: flex;
+    margin-left: 0%;
+    margin-top: 34px;
+    display: none;
     border: solid #49D6DF  ;
 }
-.footerbtn:hover{
+.footerbtn2:hover{
     background: chocolate;
     border: solid chocolate;
 }
-.footerbtn  p{
+.footerbtn2  p{
     letter-spacing: 0.8px;
     font-weight: bolder;
-    margin-top: 12px;
-    margin-left: 14px;
+    margin-top: 16px;
+    margin-left: 16px;
     font-size: 17px !important;
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    white-space: nowrap;
     color: #FFFFFF !important;
     
 }
+
+
+
 .footerdown{
     border-top: solid 1px rgba(189, 189, 189, 1);
     width: 1620px;
@@ -1415,8 +1437,8 @@ address a{
 
 
 
-/*
-@media screen and (min-width:1200px) and (max-width:1920px){ 
+
+@media screen and (min-width:1200px) and (max-width:1919px){ 
     header{
         width: 1200px;
     }
@@ -1498,7 +1520,7 @@ address a{
         margin-top: -101px;
         padding-left: 151spx;
     }
-
+    
 
 
 
@@ -1807,7 +1829,73 @@ address a{
     }
     .info4{
         margin-left: -130px;
+    }
+    .watchOnline3{
+        margin-top: 415px;
+        margin-left:39.8%;
+    }
+    .watchOnline3  p{
+        margin-top: 14px;
+        padding-left: 6px;
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+        width: 1200px; 
+    }
+    .leftpart{
+        margin-left:12.65%;
+    }
+    .footerlinks{
+       margin-left: 30.15%;
+    }
+    .footerbtn{
+       display: none;
+    }
+    .footerbtn2{
+    display: flex;
+    }
+    .centerpart{
+        margin-left: 12.55%;
+     }
+     .footercheck{
+        padding-top: 15.5px;
+        margin-left:-8px ;
+    }
+    .footercheck label{
+        padding-top: 3px;
+    }
+    .footerInfo{
+        margin-left: 15.2%;
+    }
+    .centerpart h4{
+        margin-top: 40px;
+    }
+    .soc{
+        margin-left: -14.5%;
+        margin-top: 18px;
+    }
+    .footerdown{
+        width: 899px;
+        margin-top: 49px;
+        margin-left: 12.8%;
+    }
+    .footerdown div{
+        margin-top: 32px;
+    }
+    .footerdown p{
+        margin-top:6px;
     }
 
 }
