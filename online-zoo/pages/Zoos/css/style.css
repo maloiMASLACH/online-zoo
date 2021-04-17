@@ -8,6 +8,7 @@ html,body{
     background-color: rgb(251, 251, 251); 
     
 }
+
 p{
     font-family: Roboto;
     font-style: normal;
@@ -89,6 +90,7 @@ a.activehead:hover{
     margin-top: 15px;
     margin-left: 41.5%;
 }
+
 .switcherBg{
     position: absolute;
     margin-top: 17px;
@@ -98,6 +100,7 @@ a.activehead:hover{
 }
 .switcherRn:hover{
     transform: scale(1.1);
+    
 }
 .switcherRn{
     position: absolute;
