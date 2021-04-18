@@ -1392,12 +1392,12 @@ margin-bottom: 7px;
 }
 .soc{
     margin:0;
-    margin-left: -15%;
-    margin-top: 20px;
+    margin-left: -21%;
+    margin-top: 16px;
     align-items: center;
 }
 .soc li{
-    margin-right: 5.5%;
+    margin-right: 7.5%;
 }
 .soc li:hover{
 transform: translateY(-5px);
@@ -1914,6 +1914,9 @@ address a{
     .soc{
         margin-left: -14.5%;
         margin-top: 18px;
+    }
+    .soc li{
+        margin-right: 5.5%;
     }
     .footerdown{
         width: 899px;
