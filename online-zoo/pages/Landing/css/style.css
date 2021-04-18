@@ -3293,6 +3293,15 @@ line-height: 19px;
          margin-top: -22.0%;
 
      }
+     input{
+        width:  300px;
+    }
+    .textmessage{
+        width:  300px;
+    }
+    fieldset{
+        width:  300px;
+    }
      .footercheck{
         padding-top: 15.5px;
         margin-left:-8px ;
@@ -3324,6 +3333,9 @@ line-height: 19px;
     }
     .soc li{
         margin-right: 4.8%;
+    }
+    button[type="submit"]{
+        margin-left: 191px;
     }
     .footerdown{
         width: 310px;
