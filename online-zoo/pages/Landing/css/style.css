@@ -1105,8 +1105,10 @@ letter-spacing: 0.6px;
 }
 .mapTextBold{
     font-weight: bolder;
-    
     padding-right: 5px;
+}
+.mapTextBoldSP{
+    display: none;
 }
 
 .watchOnline3{
@@ -2565,11 +2567,15 @@ address a{
 
 
 @media screen and (min-width:320px) and (max-width:639px){ 
+    .first_part{
+        height: 92px;
+    }
     header{
         width: 320px;
     }
+    
     .icon{
-        margin-top: 27px;
+        margin-top: 25px;
         height: 42px;
         margin-left: 3.25%;
     }
@@ -2577,12 +2583,12 @@ address a{
        display: none   ;
     }
     .switcher{
-        margin-top: 19px;
+        margin-top: 17px;
         margin-left: 35.35%;
     }
     .burger{
         display:inline;
-        margin: 40px 0px 0px 27%;
+        margin: 38px 0px 0px 27%;
     }
 
 
@@ -2891,7 +2897,7 @@ address a{
             z-index: 2;
         }
         .petInzoomove{
-            margin-top: 43px;
+            margin-top: 43px !important;
             margin-left: -10px;
         }
         .animalbtn{
@@ -3110,19 +3116,22 @@ line-height: 19px;
 
     
     .eight_part{
-        height: 665px;
+        height: 413px;
     }
     .map{
-        width: 640px;
+        width: 320px;
     }
     .map h1{
-        padding-left: 42.6%;
+        margin-top: -51.5px;
+        padding-left: 38.8%;
+        font-size: 36px;
+        line-height: 42px;
     }
     .mapImg{
-        margin-top: -10px;
+        margin-top: -28.5px;
         margin-left: 3%;
-        width: 599px;
-        height:  290px;
+        width: 300px;
+        height:  146px;
     }
     
     .point1{
@@ -3130,38 +3139,103 @@ line-height: 19px;
     margin-top: -35.2%;
     }
     .point2{
-        padding-top: 1%;
-    margin-left: 19%;
+        padding-top: 1.1%;
+    margin-left: 19.5%;
     margin-top: -44.3%;
     }
     .point3{
-    margin-left: 11.5%;
-    margin-top: -1.5%;
+    margin-left: 10.9%;
+    margin-top: -2.6%;
     }
     .point4{
-    margin-left: 69.8%;
-    margin-top: 0.48%;
+    margin-left: 70.8%;
+    margin-top: 1.6%;
+    }
+    .icon-icon-marker{
+        z-index: 20;
+        position: absolute;
+        font-size: 295%;
+        color: rgb(75, 215, 200);
+        
+    }
+    .icon-icon-marker:hover{
+        transition: 0.3s;
+        color: red;
+        font-size: 295%;
+        
+       
+    }
+    .pointPic{
+        position: absolute;
+        padding: 0;
+        margin: 5px 0px 0px -27px;
+        width: 62%;
+        height: 45%;
+        border-radius: 50%;
+        z-index: 2;
+        
+    }
+   
+    .info img{
+        padding: 16px 20px 0 14px;
+        width: 40px;
+        height: 40px;
+    }
+    .info div{
+        padding-top:0px;
+        margin: 0;
+        margin-top: -2px;
+        margin-left: -11px;
+    }
+    .info h4{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .mapText{
+        margin: -26px 0px 10px 0px !important;
+        padding: 0;
+        width: 150px;
+        text-align: start !important;
+    }
+    .mapText p{
+        
+        font-size: 11px;
+        line-height: 13px;
+        text-align: left;
+    }
+    .mapTextBold{
+        font-weight:400;
+        padding-right: 5px;
+        display: none;
+    }
+    .mapTextBoldSP{
+        display: inline;
     }
     .info{
         margin-left: -400px;
         margin-top: 69px; 
+        width: 238px;
+        height: 113px;
     }
     .info1{
-        margin-left: -100px;
+        margin-left: -110px;
+        margin-top: 33px;
     }   
     .info3{
-        margin-left: 27px;
+        margin-top: 32px;
+        margin-left:5px;
     }
     .info2{
         margin-left: 0px;
-
+        margin-top: 30px;
     }
     .info4{
-        margin-left: -300px;
+        margin-left: -200px;
+        margin-top: 30px;
     }
     .watchOnline3{
-        margin-top: 317px;
-        margin-left:30.9%;
+        margin-top: 173px;
+        margin-left:11.9%;
     }
     .watchOnline3 img{
         padding-left: 32px;
@@ -3180,33 +3254,34 @@ line-height: 19px;
     
 
     .nine_part{
-        height: 1068px;
+        height: 1100px;
     }
     footer{
-        width: 640px; 
+        width: 320px; 
     }
     .leftpart{
-        margin-top: -3px;
+        margin-top: -50px;
         margin-left:3.1%;
     }
     .footerlinks{
         display: inline;
-       margin-left: -15.4%;
-       margin-top: 73px;
+       margin-left: -30%;
+       margin-top: 84px;
     }
     .footerlinks li{
         margin-bottom: 5px;
     }
     .footerbtn{
-       display: flex;
-        margin-left: 43.1%;
+       display: none;
     }
     .footerbtn2{
-    display: none;
+        margin-top: 37px;
+        margin-left: 4%;
+        display: flex;
     }
-    .footerbtn  p{
-        margin-top: 14px;
-        margin-left: 18px;  
+    .footerbtn2  p{
+        margin-top: 14.5px;
+        margin-left: 19px;  
     }
     .centerpart{
         display: inline;
@@ -3214,8 +3289,8 @@ line-height: 19px;
      }
      .formholder{
          margin: 0;
-         margin-left: 3.1%;
-         margin-top: -11%;
+         margin-left: 2.6%;
+         margin-top: -22.0%;
 
      }
      .footercheck{
@@ -3226,7 +3301,7 @@ line-height: 19px;
         padding-top: 3px;
     }
     .footerInfo{
-        margin-top:61px;
+        margin-top:36px;
         margin-left: 3.4%;
     }
     .centerpart h4{
@@ -3244,16 +3319,16 @@ line-height: 19px;
     }
     .soc{
         display: flex;
-        margin-left: -6.5%;
-        margin-top: 20px;
+        margin-left: -12.6%;
+        margin-top: 19px;
     }
     .soc li{
-        margin-right: 2.4%;
+        margin-right: 4.8%;
     }
     .footerdown{
-        width: 602px;
-        margin-top: 61.5px;
-        margin-left: 3.1%;
+        width: 310px;
+        margin-top: 78.5px;
+        margin-left: 3.4%;
     }
     .footerdown div{
         margin-left: 0.1%;
@@ -3269,20 +3344,7 @@ line-height: 19px;
         opacity: 0;
     
     }
-    .pet:not(:nth-child(3),:nth-child(2)) .petInzoomove{
-        display: none;
-    }
-    .pet:not(:nth-child(3),:nth-child(2)) .petcover{
-        display: none;
-    }
-
-    .petInzoomove{
-        z-index: 3;
-        position: absolute;
-        margin-top: 43px;
-        opacity: 0;
     
-    }
 
 }
 
