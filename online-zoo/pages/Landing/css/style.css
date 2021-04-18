@@ -343,6 +343,7 @@ overflow: hidden;
     overflow: hidden;
 }
 .animalsOnSlider{
+    
     position: relative;
     z-index: 1000;
 display: flex;
@@ -2216,7 +2217,20 @@ address a{
             padding-left: 6px;
         }
 
-
+        .pet:not(:nth-child(3),:nth-child(2)) .petInzoomove{
+            display: none;
+        }
+        .pet:not(:nth-child(3),:nth-child(2)) .petcover{
+            display: none;
+        }
+    
+        .petInzoomove{
+            z-index: 3;
+            position: absolute;
+            margin-top: 42px !important;
+            opacity: 0;
+        
+        }
 
 
 
@@ -2536,6 +2550,725 @@ address a{
         opacity: 0;
     
     }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:639px){ 
+    header{
+        width: 320px;
+    }
+    .icon{
+        margin-top: 27px;
+        height: 42px;
+        margin-left: 3.25%;
+    }
+    ul.firstUL{
+       display: none   ;
+    }
+    .switcher{
+        margin-top: 19px;
+        margin-left: 35.35%;
+    }
+    .burger{
+        display:inline;
+        margin: 40px 0px 0px 27%;
+    }
+
+
+
+
+
+
+
+    
+    .thecond_part{ 
+        height: 669px;
+    }
+    .conteinerWatch{
+        width: 640px;
+    }
+    .watch{
+        padding:58px 0px 0px 26.45%;
+        width: 303px;
+    }
+    .watch h1{
+        letter-spacing: 0.5px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .watchOnline1{
+        margin-left: 1px;
+        margin-top: -15px;
+        
+    }
+    .lineOnAnimalSlider{ 
+        width: 150px;   
+    margin-top: 191.5px ;
+    margin-left:163px;
+    }
+    .animalsOnSlider{
+        padding: 0;
+       margin: 0;
+    margin-left:165px;
+    margin-top: 155px;
+    }
+    .animalsOnSlider  ul{
+        height: 200px;
+        margin-top:-41px;
+    }
+    .animalsOnSlider  ul li{
+  height: 180px;
+  margin-top: -120px;
+        margin-right:-35px;
+        padding: 0;
+    }
+    .animalsOnSlider  ul li.active{
+        padding: 0;
+        margin-top:-100px;
+        margin-left: -35px !important;
+        margin-right: 173px !important;
+        display: inline;
+        width: 10px;
+    }
+    .animalsOnSlider  ul li.active  img{
+        padding: 0;
+        cursor: default; 
+        margin-top: -50px;
+        transform: scale(0.57);
+    }
+    .animalsOnSlider ul li:not(.active)  img{
+        cursor: default;  
+        height: 200px;
+        margin-top: 38px;
+       transform: scale(1.22);
+    }
+    .animalsOnSlider  ul li.active  .animalShortInfo{
+        z-index: 2;
+        margin-top: 100px;
+        line-height: 16px;
+        margin-left: 60px;
+        font-size: 12px;
+        line-height: 14px;
+        width: 120px;
+    }
+    .animalsOnSlider  ul li.active .animalbtn{
+        z-index: 2;
+        margin-left: 46px !important;
+        margin-top: 202px;
+        
+    }
+    .animalsOnSlider  ul li.active .animalbtn img{
+        width: 41px;
+        margin-top: -49px;
+    }
+    .animalsOnSlider  ul li.active .animalbtn p{
+        margin: 0;
+        margin-top:-36px;
+        margin-left: -4px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .animalsOnSlider  ul li.active .animalbtn2{
+        z-index: 2;
+        margin: 0;
+        margin-top: 205px;
+    }
+    .animalsOnSlider  ul li.active  .animalbtn2 img{
+        width: 41px;
+        margin-top: -23px !important;
+        margin-left: -137px;
+    }
+    .animalsOnSlider  ul li.active  .animalbtn2 p{
+        margin: 0;
+        margin-top:-9px;
+        margin-left: -53px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .animalsOnSlider  ul li.active  .dolar{
+        margin: 0;
+        margin-left: -24px;
+        margin-top: 0px !important;
+    width: 17px !important;
+    }
+    .counternull{
+        margin-top: -23px !important;
+        margin-left: 18.1%;
+    }
+    .ponzynokNull{
+       
+        margin-left: 17.4%;
+    }
+    .ponzynokNullBlock{
+        position: absolute;
+        margin-right: 108px;
+        width: 17px;
+        height: 10px;
+        margin-top: -12px;
+    }
+    .ponzynokNullLinia{
+        position: absolute;
+        margin-top:-9px ;
+        width: 140px;
+        height: 5px;
+    }
+    .thecondUL{
+        display: none;
+        margin-top: -98px;
+        padding-left: 20px;
+    }
+    
+
+
+
+
+
+
+
+    
+    .howWorks{
+        width: 320px;
+        padding-top: 13px;
+        
+    }
+    .conteinerSmall h1{
+        font-size: 36px;
+        line-height: 42px;
+        margin-left: 3%;
+       }
+       .conteinerSmall p{
+           margin-top: -4px;
+       margin-left: 3%;
+         width: 300px;
+         line-height: 16.5px;
+       }
+       .dearImg{
+           background-image: url(../../../assets/images/di2.png);
+           margin-top: 32px;
+           margin-left: 3%  ;
+            width: 300px;
+            height: 321px;
+       }
+       .counterFirst{
+           margin-top: 24px;
+           margin-left: -16px;
+       }
+       .counterFirst .Smax{
+        margin-left:-33.5% !important;
+       }
+       .ponzynokFirst{
+           margin-left: 3.4%;
+       }
+       .ponzynokFirstBlock{
+       margin-right: 166px;
+       width: 82px;
+       }
+       .watchOnline2{
+        margin-top: 30px;
+        margin-left: 13.6%;
+       }
+       .watchOnline2 img{
+       height: 32px;
+       width: 32px;
+       margin-left: 31px;
+       margin-top: 9px;
+       }
+       .watchOnline2 p{
+       margin:0;
+       margin-top: 18px;
+       margin-right: 23px;
+       }
+
+
+
+
+
+
+
+
+    .fourth_part{
+    height: 719px;
+    }
+    .problemscon{
+        width: 320px;
+    }
+    .problem{ 
+        display: inline;
+        margin-top: -50px;
+     margin-left: -8%;
+    }
+    .problem li{
+        margin:0;
+    margin-right: 20.5px;
+    margin-top: -5px;
+    }
+    .firstProblem h3{
+        margin-left: -23px !important;
+    }
+    .thirdProblem{
+        margin-top: -16px !important;
+    }
+    .problem img{
+    padding-left: 105px;
+    }
+    .problem h3{
+    margin-left: 0px;
+    letter-spacing: 0.2px;
+    }
+    .problem p{
+    width: 300px;
+    height: 64px;
+    margin-top: 16px;
+    margin-left: -4px;
+    }
+   
+
+
+
+
+
+
+
+
+
+
+    
+
+    .fifth_part{
+        height: 683px;
+        }
+        .petsInZoo{
+        width: 320px;
+        overflow: hidden;
+        }
+        .petsInZoo h1{
+         padding-left: 34.6%;
+         font-size: 36px;
+        line-height: 42px;
+        }
+        .thecondSlider img.pet{
+            height: 301px ;
+            width: 210px;
+        }
+        .thecondSlider{
+            padding: 0;
+            padding-top: 0px;
+            margin-top: 30.5px;
+            margin-left: 144.4%;
+    
+        }
+        .thecondSlider li.pet{     
+            margin-right: 16px;
+        }
+        
+        .thecondSlider li.arrow{
+          display: none;
+            margin-right: 0px;
+            margin-left: -0px;
+            padding-top: 4px;
+            padding-right:18px ;
+            padding-left: 0px;
+        }
+        .pet .petcover{
+            background-color:rgba(0,0,0);
+            height: 301px ;
+            width: 210px;
+            border-radius: 5px;
+            position: absolute;
+            opacity: 0;
+            z-index: 2;
+        }
+        .petInzoomove{
+            margin-top: 43px;
+            margin-left: -10px;
+        }
+        .animalbtn{
+            width:140px ;
+            margin-left: 17px;
+        }
+        .animalbtn2{
+            margin-left: 135px !important;
+            width:50px ;
+        }
+        .dolar{
+            margin: 0;
+            margin-left: -25px;
+        }
+        .thecondCounter{
+            margin-left: -4px;
+            margin-top: -13px;
+            padding-top: 0;
+            padding-left: 6px;
+        }
+        .choose{
+            margin-top: 37px;
+            margin-left: 12%;
+        }
+        .choose p{
+            padding: 14px 0px 0 11px;
+        }
+        .ponzynokThecond{
+            margin-top: -14px;
+            padding-left: 6px;
+        }
+        .pet:not(:nth-child(2)) .petInzoomove{
+            display: none;
+        }
+        .pet:not(:nth-child(2)) .petcover{
+            display: none;
+        }
+    
+        .petInzoomove{
+            z-index: 3;
+            position: absolute;
+            margin-top: 43px;
+            opacity: 0;
+        
+        }
+
+
+
+
+
+
+
+
+
+        
+    .six_part{
+        height: 1202px;
+    }
+    .donate{
+        width: 320px;
+    }
+    .donate h1{
+        padding: 0;
+        margin-top:-50px;
+        padding-left: 17.0%;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .donate p{
+        display: none;
+    }
+    .donate ul{
+        display: inline;
+        margin-top: 35px;
+       
+    }
+    .donate li{
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 39px;
+        margin-left: 11.1%;
+    }
+    .donate button{
+        margin-top: -3px !important;
+        margin-left: 12%;
+    }
+    .donate button p{
+        display: flex;
+        letter-spacing: 0.8px;
+        font-weight: bolder;
+        margin: 2px 0 0 70px !important;
+    }
+    .smallArrow img{
+        height: 10px;
+        width: 38px;
+    }
+    .smallArrow{
+        margin-top: -20px !important;
+        margin-left: 50% !important;
+        margin-bottom: 58px !important;
+        width: 0px;
+        transform: rotate(90deg);
+    }
+    .six_part .choose{
+        margin-top: 45px;
+    }
+    .six_part .choose p{
+        margin-top: 0px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .seven_part{
+        height: 705px;
+    }
+
+    .people{
+        width: 320px;  
+    }
+    .people h1{
+        margin-top: -51px;
+        padding-left: 17.6%;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+  
+    .people li:not(:nth-child(3)){
+        width: 300px;
+        height: 310px;
+        display: none;
+    }
+    .people ul{
+        margin-top: -8px;
+        margin-left: -9.5%;
+    }
+    .people li{
+     margin-right: 20px;
+    }
+    .people .arrow{
+        display: none;
+    }
+    .people li:nth-child(2){
+        margin-right: 20px;
+        
+       }
+    .people li:nth-child(3){
+        margin-right: 20px;
+       }      
+   .users{
+       width: 300px !important;
+   }
+    .user1{
+    margin-left:187px ;
+    }
+    .user2{
+        margin-top: 50px;
+        margin-left:117px ;  
+    }
+    .users h3{
+        margin-top: 43px;
+        font-size: 16px;
+line-height: 19px;
+        letter-spacing: 0.3px;  
+    }
+    .users p{
+        width: 272px;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 72px;
+        line-height: 16.5px;
+        margin-left: -58px;
+    }
+    .thirdCounter{
+        padding-top: 53px;
+    }
+    .ponzynokThird{
+        margin-top: -13px;
+    }
+    .people button{
+        margin-top: 30px;
+        margin-left: 11.9%;
+    }
+    .people button p{
+        margin: 2px 0 0 32px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .eight_part{
+        height: 665px;
+    }
+    .map{
+        width: 640px;
+    }
+    .map h1{
+        padding-left: 42.6%;
+    }
+    .mapImg{
+        margin-top: -10px;
+        margin-left: 3%;
+        width: 599px;
+        height:  290px;
+    }
+    
+    .point1{
+    margin-left: 44.9%;
+    margin-top: -35.2%;
+    }
+    .point2{
+        padding-top: 1%;
+    margin-left: 19%;
+    margin-top: -44.3%;
+    }
+    .point3{
+    margin-left: 11.5%;
+    margin-top: -1.5%;
+    }
+    .point4{
+    margin-left: 69.8%;
+    margin-top: 0.48%;
+    }
+    .info{
+        margin-left: -400px;
+        margin-top: 69px; 
+    }
+    .info1{
+        margin-left: -100px;
+    }   
+    .info3{
+        margin-left: 27px;
+    }
+    .info2{
+        margin-left: 0px;
+
+    }
+    .info4{
+        margin-left: -300px;
+    }
+    .watchOnline3{
+        margin-top: 317px;
+        margin-left:30.9%;
+    }
+    .watchOnline3 img{
+        padding-left: 32px;
+        padding-top: 10px;
+    }
+    .watchOnline3  p{
+        margin-top: 17px;
+        padding-left: 6px;
+    }
+    
+
+
+
+
+
+    
+
+    .nine_part{
+        height: 1068px;
+    }
+    footer{
+        width: 640px; 
+    }
+    .leftpart{
+        margin-top: -3px;
+        margin-left:3.1%;
+    }
+    .footerlinks{
+        display: inline;
+       margin-left: -15.4%;
+       margin-top: 73px;
+    }
+    .footerlinks li{
+        margin-bottom: 5px;
+    }
+    .footerbtn{
+       display: flex;
+        margin-left: 43.1%;
+    }
+    .footerbtn2{
+    display: none;
+    }
+    .footerbtn  p{
+        margin-top: 14px;
+        margin-left: 18px;  
+    }
+    .centerpart{
+        display: inline;
+        margin-left: 12.55%;
+     }
+     .formholder{
+         margin: 0;
+         margin-left: 3.1%;
+         margin-top: -11%;
+
+     }
+     .footercheck{
+        padding-top: 15.5px;
+        margin-left:-8px ;
+    }
+    .footercheck label{
+        padding-top: 3px;
+    }
+    .footerInfo{
+        margin-top:61px;
+        margin-left: 3.4%;
+    }
+    .centerpart h4{
+        margin-top: 40px;
+    }
+
+    .centerpart p:nth-child(5){
+        margin: 0;
+        margin-top: 20px;
+    margin-bottom: 4px;
+        padding: 0;
+        width: 193px;
+        text-align: left;
+        color: #FEFEFE;
+    }
+    .soc{
+        display: flex;
+        margin-left: -6.5%;
+        margin-top: 20px;
+    }
+    .soc li{
+        margin-right: 2.4%;
+    }
+    .footerdown{
+        width: 602px;
+        margin-top: 61.5px;
+        margin-left: 3.1%;
+    }
+    .footerdown div{
+        margin-left: 0.1%;
+        margin-top: 27px;
+    }
+    .footerdown p{
+        margin-top:6px;
+    }
+    .petInzoomove{
+        z-index: 3;
+        position: absolute;
+        margin-top: 130px;
+        opacity: 0;
+    
+    }
     .pet:not(:nth-child(3),:nth-child(2)) .petInzoomove{
         display: none;
     }
@@ -2550,9 +3283,6 @@ address a{
         opacity: 0;
     
     }
-}
-@media screen and (min-width:320px) and (max-width:639px){ 
-
 
 }
 
