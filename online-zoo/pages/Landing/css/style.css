@@ -1034,8 +1034,7 @@ letter-spacing: 0.6px;
     margin-top: 77px; 
 }
 .location{
-    position: absolute;
-    
+    position: absolute;  
 }
 .icon-icon-marker{
     z-index: 20;
@@ -3166,8 +3165,6 @@ line-height: 19px;
        
     }
     .pointPic{
-        position: absolute;
-        padding: 0;
         margin: 5px 0px 0px -27px;
         width: 62%;
         height: 45%;
@@ -3338,7 +3335,7 @@ line-height: 19px;
         margin-left: 191px;
     }
     .footerdown{
-        width: 310px;
+        width: 97%;
         margin-top: 78.5px;
         margin-left: 3.4%;
     }
