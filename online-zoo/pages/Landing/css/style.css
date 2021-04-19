@@ -1467,7 +1467,7 @@ address a{
 
 
 
-@media screen and (min-width:1200px) and (max-width:1919px){ 
+@media all and (min-width:1200px) and (max-width:1919px){ 
     header{
         width: 1200px;
     }
