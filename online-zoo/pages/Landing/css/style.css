@@ -2938,7 +2938,7 @@ address a{
         .pet4 .petInzoomove{
             display: none;
         }
-        .pet2 .petInzoomove,
+        .pet2 .petcover,
         .pet3 .petcover,
         .pet4 .petcover{
             display: none;
