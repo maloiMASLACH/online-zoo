@@ -2933,10 +2933,14 @@ address a{
             margin-top: -14px;
             padding-left: 6px;
         }
-        .pet:not(:nth-child(2)) .petInzoomove{
+        .pet2 .petInzoomove,
+        .pet3 .petInzoomove,
+        .pet4 .petInzoomove{
             display: none;
         }
-        .pet:not(:nth-child(2)) .petcover{
+        .pet2 .petInzoomove,
+        .pet3 .petcover,
+        .pet4 .petcover{
             display: none;
         }
     

@@ -823,7 +823,9 @@ address a{
     margin-top: 35px;
     margin-left: 32px;
     }
-    .thecondSlider li.pet:not(:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(6)){
+    .thecondSlider li.pet6,
+    .thecondSlider li.pet7,
+    .thecondSlider li.pet7{
     display:none;
     }
     .thecondSlider li.arrow{
@@ -1021,7 +1023,11 @@ address a{
         margin-right: 15px;
 
     }
-    .thecondSlider li.pet:not(:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5)){
+    .thecondSlider li.pet4,
+    .thecondSlider li.pet5,
+    .thecondSlider li.pet6,
+    .thecondSlider li.pet7,
+    .thecondSlider li.pet7{
     display:none;
     }
     .thecondSlider li.activeimg{
@@ -1280,7 +1286,12 @@ address a{
         margin-right: 15px;
 
     }
-    .thecondSlider li.pet:not(:nth-child(2),:nth-child(3),:nth-child(4)){
+    .thecondSlider li.pet3,
+    .thecondSlider li.pet4,
+    .thecondSlider li.pet5,
+    .thecondSlider li.pet6,
+    .thecondSlider li.pet7,
+    .thecondSlider li.pet7{
     display:none;
     }
     .thecondSlider li.activeimg{
