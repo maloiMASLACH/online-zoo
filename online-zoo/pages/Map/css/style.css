@@ -793,11 +793,12 @@ address a{
         margin-left: 12.5%;
     }
     ul.firstUL{
-        margin-left:12.4%; 
+        margin-top: 39px;
+        margin-left:5.5%; 
     }
     .switcher{
         margin-top: 15px;
-        margin-left: 29.45%;
+        margin-left: 36.45%;
     }
 
 
@@ -823,9 +824,10 @@ address a{
     margin-top: 35px;
     margin-left: 32px;
     }
+    
     .thecondSlider li.pet6,
     .thecondSlider li.pet7,
-    .thecondSlider li.pet7{
+    .thecondSlider li.pet8{
     display:none;
     }
     .thecondSlider li.arrow{
@@ -836,20 +838,20 @@ address a{
         padding-left:32px;
     }
     .dearCounter{
-    margin-left: 1px; 
-    }
-    .thirdCounter{
-    margin-top: -14px;
-    }
+        margin-left: 1px; 
+        }
+        .thirdCounter{
+        margin-top: -14px !important;
+        }
  
     .ponzynokThird{
-    margin-top: -11px;
+    margin-top: -13px;
     margin-left: 0px;
     }
 
  
     .mapImg{
-        margin-top: -33px;
+        margin-top: -30px;
         margin-left: 16.85%;
         width: 798px;
         height:  387px;
@@ -905,6 +907,11 @@ address a{
     .watchOnline3{
         margin-top: 375px;
         margin-left:39.8%;
+    }
+    .watchOnline3  img{
+        padding:0;
+        margin-left:30px;
+        margin-top: 9px;
     }
     .watchOnline3  p{
         margin-top: 15px;
