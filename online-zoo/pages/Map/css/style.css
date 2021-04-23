@@ -1025,6 +1025,7 @@ address a{
     .thecondSlider{
     margin-top: 68px;
     margin-left: 10px;
+    margin-bottom: 0;
     }
     .thecondSlider li.pet{
         margin-right: 15px;
@@ -1057,7 +1058,7 @@ address a{
     margin-left: 1px; 
     }
     .thirdCounter{
-    margin-top: -17px;
+    margin-top: -1px !important;
     }
  
     .ponzynokThird{
@@ -1125,6 +1126,10 @@ address a{
     .watchOnline3{
         margin-top: 317px;
         margin-left:30.9%;
+    }
+    .watchOnline3 img{
+        margin-left: 30px;
+    margin-top: 10px;
     }
     .watchOnline3  p{
         margin-top: 15.5px;
@@ -1439,8 +1444,8 @@ address a{
         margin-left:11.9%;
     }
     .watchOnline3 img{
-        padding-left: 2px;
-        padding-top: 0px;
+        padding-left: 3px;
+        padding-top: 4px;
     }
     .watchOnline3  p{
         margin-top: 16px;
