@@ -169,7 +169,7 @@ a.activehead:hover{
     margin-left: 2.65%;
     height: 200px;
     position: sticky;
-    top: 77px;
+    top: 0px;
     bottom: 0px;
 }
 
@@ -929,7 +929,7 @@ margin-top: 30px;
         margin-top: 20px;
         margin-left: 2.5%;
         height: 200px;
-
+        top:77px;
     }  
     .thecondSlider li.activeimg{
         width: 90px;
@@ -1161,6 +1161,7 @@ margin-top: 30px;
         width: 320px;
     }
     .slider{
+        top:77px;
         margin-top: -2px;
         margin-left: 5.5%;
         height: 200px;
