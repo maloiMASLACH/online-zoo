@@ -1940,6 +1940,14 @@ address a{
 
 
 @media screen and (min-width:640px) and (max-width:1199px){ 
+    body{
+        height:6406px;
+    }
+    .first_part{
+        z-index: 3000;
+        top:0;
+        position: sticky;
+    }
     header{
         width: 640px;
     }
@@ -2571,9 +2579,16 @@ address a{
 
 
 @media screen and (min-width:320px) and (max-width:639px){ 
+    body{
+        height:5366px;
+    }
     .first_part{
+        z-index: 3000;
+        top:0;
+        position: sticky;
         height: 92px;
     }
+
     header{
         width: 320px;
     }
