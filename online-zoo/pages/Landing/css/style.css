@@ -26,10 +26,9 @@ a{
     text-decoration: none;
 }
 
-
-
-
-
+.part{
+    transition: 1s;
+}
 
 
 
@@ -159,6 +158,7 @@ a.activehead:hover{
 }
 
 .burger{
+    z-index: 3003;
     display: none;
 }
 .burger:hover{
@@ -174,6 +174,42 @@ a.activehead:hover{
 75%{
     transform: rotate(-20deg);
 }
+}
+.BurgerUl{
+    z-index: 3001;
+    height: 100%;
+    width: 150px;
+    background-color: white;
+    position: fixed;
+    top:75px;
+    right: -200px;   
+}
+.BurgerUl li {
+    margin-top: 35px;
+
+}
+.BurgerUl li a{
+    text-decoration: none;
+     color: black;
+}
+.BurgerUl li a:hover{
+    color: turquoise;
+}
+.BurgerUl.dark{
+    background-color: #333333;
+}
+.BurgerUl.dark li a{
+    color: white;
+}
+.BurgerUl.dark li a:hover{
+    color: turquoise;
+}
+.BurgerUl.activeB{
+    transform:translateX(-200px);
+    transition: 1s;
+}
+.BurgerUl:not(.activeB){
+    transition: 1s;
 }
 
 
