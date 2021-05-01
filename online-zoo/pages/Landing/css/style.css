@@ -1765,6 +1765,8 @@ justify-content: left;
     width: 240px;
     font-size: 18px;
 line-height: 116.5%;
+height: 33px;
+color: black;
 }
 .list3,.list4{
     background: #F9F9F9;

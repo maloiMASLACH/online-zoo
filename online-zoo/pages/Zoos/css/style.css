@@ -140,7 +140,7 @@ a.activehead:hover{
 .checkbox {
     opacity: 0;
     margin-left: 41.1%;
- 
+    width: 20px; 
 }
 
 .checkbox:checked + .label {
@@ -611,7 +611,8 @@ fieldset:hover{
     padding-top: 20.5px;
     margin-left:-6px ;
 }
-.checkbox{
+
+.checkbox-footer{
     width: 20px;  
 }
 .footercheck label{
@@ -906,6 +907,8 @@ justify-content: left;
     width: 240px;
     font-size: 18px;
 line-height: 116.5%;
+height: 33px;
+color: black;
 }
 .list3,.list4{
     background: #F9F9F9;
@@ -967,12 +970,12 @@ color: #828282;
         margin-left: 12.5%;
     }
     ul.firstUL{
-        margin-top: 40px;
-        margin-left:5.6%; 
+        margin-left:5.5%; 
     }
-    .switcher{
-        margin-top: 15px;
-        margin-left: 36.35%;
+    .checkbox {
+        opacity: 0;
+        margin-left: 35.7%;
+     
     }
 
 
@@ -1149,7 +1152,7 @@ margin-top: 30px;
         height:1076px;
     }
     .first_part{
-        z-index: 1000;
+        z-index: 3000;
         top:0;
         position: sticky;
     }
@@ -1164,14 +1167,29 @@ margin-top: 30px;
     ul.firstUL{
        display: none   ;
     }
-    .switcher{
-        margin-top: 20px;
-        margin-left: 63.35%;
+    .checkbox {
+        margin: 0;
+        margin-left:62.6%;
+    
     }
+   .label{
+       margin-top: 35px;
+   }
     .burger{
-        display:inline;
-        margin: 41px 0px 0px 15%;
-
+    
+        margin: 41px 0px 0px 5.2%;
+    }
+    .burger.forligth{
+        display: inline;
+    }
+    .burger.fordark{
+        display: none;
+    }
+   .dark .burger.forligth{
+        display: none;
+    }
+   .dark .burger.fordark{
+        display: inline;
     }
 
 
@@ -1385,11 +1403,12 @@ margin-top: 30px;
         height:776px;
     }
     .first_part{
-        z-index: 1000;
+        z-index: 3000;
         top:0;
         position: sticky;
         height: 92px;
     }
+
     header{
         width: 320px;
     }
@@ -1402,15 +1421,29 @@ margin-top: 30px;
     ul.firstUL{
        display: none   ;
     }
-    .switcher{
-        margin-top: 17px;
-        margin-left: 35.35%;
+    .checkbox {
+        margin: 0;
+        margin-left: 25.9%;
     }
+   .label{
+       height: 20px;
+       margin-top: 34px;
+   }
     .burger{
-        display:inline;
-        margin: 38px 0px 0px 27%;
+        margin: 38px 0px 0px 7.5%;
     }
-
+    .burger.forligth{
+        display: inline;
+    }
+    .burger.fordark{
+        display: none;
+    }
+   .dark .burger.forligth{
+        display: none;
+    }
+   .dark .burger.fordark{
+        display: inline;
+    }
 
 
 
