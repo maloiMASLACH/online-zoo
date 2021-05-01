@@ -594,7 +594,7 @@ footer{
 .leftpart{
     display: flex;
     padding: 0;
-    width: 100%;
+    width: 92.1%;
     padding-top: 100px;
     margin-left: 7.8%;
 }
@@ -876,6 +876,21 @@ transition: 0.4s;
 address a{
     text-decoration: none ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
