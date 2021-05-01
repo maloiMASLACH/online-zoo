@@ -15,13 +15,13 @@
     
 </head>
 
-<body>
+<body class="part">
  
-    <div class="first_part" id="head">
+    <div class="part first_part" id="head">
         <div class="conteinerHead">    
              <header>
                 <a href="../../Landing/html/index.html" class="icon"><img src="../../../assets/images/logo.svg" ></a> 
-                
+                <a href="../../Landing/html/index.html" class="icon-light-head"><img src="../../../assets/images/Logolight.svg" ></a> 
                  <ul class="firstUL">
                      <li><a   href="../../Landing/html/index.html"">About</a></li>
                      <li><a  href="../../Zoos/html/index.html">Zoos</a></li>
@@ -29,18 +29,21 @@
                      <li><a href="#footer">Contact Us</a></li>
                      <li><a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1">Design</a></li>
                  </ul>
-                 <div class="switcher">
-                     <img class="switcherBg" src="../../../assets/images/switcherbg.svg">
-                     <img class="switcherRn" src="../../../assets/images/switcherRn.svg">
+                 <input type="checkbox" class="checkbox" id="checkbox">
+                 <label for="checkbox" class="label">
+                    <div class="ball"></div>
+                </label>
+                 <div class="burger forligth">
+                    <img src="../../../assets/images/menu.png">
                  </div>
-                 <div class="burger">
-<img src="../../../assets/images/menu.png">
-                 </div>
+                 <div class="burger fordark">
+                    <img src="../../../assets/images/menu-for-dark.png">
+                </div>
                  <h1 style="display: none;">Online Zoo</h1>
              </header>
         </div>  
     </div>
-   <div class="eight_part">
+   <div class="part eight_part">
         <div class="conteinerMap">
             <div class="map">
                 <h1>Choose your favorite</h1>
@@ -53,7 +56,8 @@
                      and compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian
                       bushfires on precious species and their habitat.</p>
                       <ul class="thecondSlider">
-                        <li class="arrow"><a href=""><img src="../../../assets/images/Left.png" alt=""></a></li>
+                        <li class="arrow arrow-light"><a href=""><img src="../../../assets/images/Left.png" alt=""></a></li>
+                        <li class="arrow arrow-black"><a href=""><img src="../../../assets/images/left-light.png" alt=""></a></li>
                         <li class="pet pet1"><a href="#no_scroll"><img class="pet" src="../../../assets/images/GorillaR.png" alt=""></a></li>
                         <li class="pet pet2 activeimg"><a href="#no_scroll"><img class="pet activeimg" src="../../../assets/images/pandaR.png" alt=""></a></li>
                         <li class="pet pet3"><a href="#no_scroll"><img class="pet" src="../../../assets/images/CrocoR.png" alt=""></a></li>
@@ -62,7 +66,8 @@
                         <li class="pet pet6"><a href="#no_scroll"><img class="pet" src="../../../assets/images/ElefantR.png" alt=""></a></li>
                         <li class="pet pet7"><a href="#no_scroll"><img class="pet" src="../../../assets/images/LionR.png" alt=""></a></li>
                         <li class="pet pet8"><a href="#no_scroll"><img class="pet" src="../../../assets/images/ZebraR.png" alt=""></a></li>
-                        <li class="arrow" ><a href="#no_scroll"><img src="../../../assets/images/Right.png" alt=""></a></li>
+                        <li class="arrow arrow-light" ><a href="#no_scroll"><img src="../../../assets/images/Right.png" alt=""></a></li>
+                        <li class="arrow arrow-black"><a href=""><img src="../../../assets/images/right-light.png" alt=""></a></li>
                       </ul>
                       <div class="dearCounter thirdCounter">
                         <p class="Dnow">02/</p>
@@ -73,7 +78,8 @@
                         <div class="ponzynokThirdLinia"></div>
                     </div>
                 <div class="mapCon"> 
-                    <img class="mapImg" src="../../../assets/images/Map.png">
+                    <img class="mapImg ligthMap" src="../../../assets/images/Map.png">
+                    <img class="mapImg darkMap" src="../../../assets/images/Map-for-blck.png">
                     <div class="point point1">
                         <div class="icon-icon-marker">
                         <img class="location"src="">
@@ -160,7 +166,7 @@
             </div>
         </div>
     </div>
-    <div class="nine_part">
+    <div class="part nine_part">
         <div class="footercon">
             <footer id="footer">
                 <div class="footertop">
@@ -172,7 +178,7 @@
                     <li><a href="#">Map</a></li>
                     <li><a href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap">Design</a></li>
                 </ul>  
-                <button class="footerbtn">
+                <button class="footerbtn formbtn">
                     <p>donate for volunteers</p>
                 </button>
                 </div>
@@ -189,7 +195,7 @@
                             <textarea  maxlength=280 class="textmessage" required></textarea>
                         </fieldset>
                         <div class="footercheck">
-                            <input type="checkbox"class="checkbox" id="check" required >
+                            <input type="checkbox"class="checkbox-footer" id="check" required >
                             <label for="ckeck">I agree to the processing of Personal Data</label>
                         </div>
                         <button type="submit">
@@ -210,7 +216,7 @@
                         <li><a href="https://vk.com/feed"><img src="../../../assets/images/VK.png" alt=""></a></li>
                         <li><a href="https://www.youtube.com/"><img src="../../../assets/images/YouTube.png" alt=""></a></li>
                     </ul>
-                    <button class="footerbtn2">
+                    <button class="footerbtn2 formbtn">
                         <p>donate for volunteers</p>
                     </button>
                 </div>
@@ -226,5 +232,97 @@
             </footer>
         </div>
     </div>
+    <div class="form-page displayNone">
+        <div class="form-page-conteiner">
+            <img src="../../../assets/images/form-dear.png" alt="">
+            <div class="form-page-info">
+                <h3>Donate for your animal </h3>
+                <div class="first-part-donate">
+                    <fieldset class="form-fildset">
+                        <legend class="form-legend"> Choose an animal</legend>
+                        <select class="list1" name="list1">
+                            <option></option>
+                            <option>Panda</option>
+                            <option>Eagle</option>
+                            <option>Aligator</option>
+                            <option>Lion</option>
+                            <option>Gorrila</option>
+                            <option>Tiger</option>
+                            <option>Elephant</option>
+                            <option>Zebra</option>
+                           </select>
+                    </fieldset>
+                    <fieldset class="form-fildset">
+                        <legend class="form-legend"> To donate</legend>
+                        <input type="text"maxlength=3 class="text-input">
+                    </fieldset>
+                </div>
+                <div class="thecond-part-donate">
+                    <div class="left-part-donate">
+                        <h4>About you</h4>
+                        <fieldset class="form-fildset">
+                            <legend class="form-legend">Name</legend>
+                            <input type="text" class="text-input">
+                        </fieldset>
+                        <fieldset class="form-fildset">
+                            <legend class="form-legend">Email</legend>
+                            <input type="text" class="text-input">
+                        </fieldset>
+                        <fieldset class="form-fildset phone-donate">
+                            <legend class="form-legend">Phone</legend>
+                            <select class="list2" name="list2">
+                                <option>+375</option>
+                                <option>+7</option>
+                                <option>+8</option>
+                               </select>
+                            <input type="text" class="text-input-tel">
+                        </fieldset>
+                    </div>
+                    <div class="right-part-donate">
+                        <h4>Checkout</h4>
+                        <fieldset class="form-fildset">
+                            <legend class="form-legend">Card number</legend>
+                            <input type="text" class="text-input">
+                        </fieldset>
+                        <fieldset class="form-fildset">
+                            <legend class="form-legend">Expiry date</legend>
+                            <select class="list3" name="list3">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                               </select>
+                               <select class="list4" name="list4">
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                               </select>
+                        </fieldset>
+                        <fieldset class="form-fildset phone-donate">
+                            <legend class="form-legend">CVC</legend>
+                            <input type="text" class="text-input">
+                        </fieldset>
+                    </div>
+
+                </div>
+               <p class="donate-short-info">If don’t cancel your subscription before the trial ends on April 15, 
+                   2021, you agree that you will automatically be charged
+               </p> 
+               <button class="donate-form-btn">
+                <p>donate</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
     </body>
     </html>

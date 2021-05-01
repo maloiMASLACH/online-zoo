@@ -25,7 +25,9 @@ list-style-type: none;
 a{
     text-decoration: none;
 }
-
+body.dark {
+    background-color: #303030;
+}
 
 
 
@@ -40,13 +42,17 @@ a{
 .first_part{
     background-color: #FFFFFF;
     height: 94px;
-    box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+    overflow: hidden;
+}
+.first_part.dark{
+    background: #333333;
 }
 .conteinerHead{
     margin:0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 header{
     overflow: hidden;
@@ -59,6 +65,15 @@ header{
     height: 42px;
     margin-left: 7.86%;
 }
+.icon-light-head{
+    display: none;
+    margin-top: 26px;
+    margin-left: -60px;
+}
+.dark .icon-light-head{
+    display: flex;
+}
+
 ul.firstUL{
     list-style-type: none;
     display:inline-flex;
@@ -79,6 +94,10 @@ ul.firstUL{
     color: #333333;
     text-decoration: none;
 }
+.dark .firstUL a{
+    color: white;
+    text-decoration: none;
+}
 .firstUL a.activehead{
 text-decoration: underline;
 font-weight: 900;
@@ -86,33 +105,60 @@ cursor:default;
 }
 a:hover{
     color:#55c3df;
+    
 }
 a.activehead:hover{
     color:#333333;
 }
+.dark a:hover{
+    color:#55c3df;
+    
+}
+.dark a.activehead:hover{
+    color:#c7c7c7;
+}
+.label {
+    width: 44px;
+    height: 22px;
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-top:31px;
+}
 
-.switcher{
-    margin-top: 15px;
-    margin-left: 41.5%;
-}
-.switcherBg{
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
     position: absolute;
-    margin-top: 17px;
-    margin-left: 8px;
-    height: 30px;
-    
+    top: 5px;
+    left: 6px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+    transition: transform .2s linear;
 }
-.switcherRn:hover{
-    transform: scale(1.1);
+
+.checkbox {
+    opacity: 0;
+    margin-left: 41.1%;
+ 
 }
-.switcherRn{
-    position: absolute;
-    margin-top: 11px;
-    margin-right:0px ;
-    color: aqua;
-    font-size: 20px;
-    
+
+.checkbox:checked + .label {
+    background-color: #c7c7c7;
 }
+
+.checkbox:checked + .label .ball {
+    background-color: #4f4f4f;
+    color: #1b1b1b;
+    transform: translateX(22px);
+}
+
 .burger{
     display: none;
 }
@@ -148,14 +194,17 @@ a.activehead:hover{
 
 
 
-
-
 .eight_part{
     height: 1279px;
     background-color: rgb(251, 251, 251);
     margin-top: 8px;
     
 }
+.eight_part.dark{
+    background: #4F4F4F;
+
+}
+
 .conteinerMap{
     margin:0 auto;
     display: flex;
@@ -175,6 +224,10 @@ a.activehead:hover{
     letter-spacing: 0.6px;
     font-weight: bolder;
 }
+.dark .map h1{
+    color: rgba(254, 254, 254, 1);
+
+}
 .mapinfo{
     width: 790px;
     height: 80px; 
@@ -185,6 +238,9 @@ a.activehead:hover{
     margin-left: 29.5%;
     margin-top: 23px;
     text-align: left;
+}
+.dark .mapinfo{
+    color: rgba(254, 254, 254, 1);
 }
 .thecondSlider{
     display: flex;
@@ -243,6 +299,15 @@ a.activehead:hover{
     transform: rotate(360deg);
     transition: 0.5s;
 }
+.thecondSlider .arrow-black{
+    display: none;
+}
+.dark .thecondSlider .arrow-black{
+    display: flex;
+}
+.dark .thecondSlider .arrow-light{
+    display: none;
+}
 .dearCounter{
     margin-left: -35px;
     margin-top: -8px !important;
@@ -258,6 +323,9 @@ a.activehead:hover{
     letter-spacing: 0em;
     color: rgba(51, 51, 51);
     font-weight: bolder;
+}
+.dark .dearCounter p.Dnow{
+    color: rgb(255, 255, 255);
 }
 .dearCounter p.Smax{
     margin-left:-44.5% ;
@@ -294,6 +362,9 @@ a.activehead:hover{
     background: rgba(51, 51, 51, 1);
     z-index: 2;
 }
+.dark .ponzynokThirdBlock{
+    background:rgba(254, 254, 254, 1) ;
+}
 .ponzynokThirdLinia{
     position: absolute;
     margin-top:3px ;
@@ -308,6 +379,15 @@ a.activehead:hover{
     width: 62.5%;
     padding-top: 60px;
     margin-left: 18.75%;
+}
+.darkMap{
+    display: none;
+}
+.dark .darkMap{
+    display: flex;
+}
+.dark .ligthMap{
+    display: none;
 }
 .point1{
     margin-left: 48.6%;
@@ -329,7 +409,9 @@ a.activehead:hover{
     margin-left: -400px;
     margin-top: 77px; 
 }
-
+.dark .info{
+    background: #333333;
+}
 .info4{
     margin-left: 30px;
     margin-top: 77px; 
@@ -371,6 +453,7 @@ a.activehead:hover{
     display: flex;
     opacity: 0;
 }
+
 .point:hover .info {
     transition: 0.9s;
     opacity: 1;
@@ -396,12 +479,33 @@ a.activehead:hover{
     line-height: 21px;
     color: #333333;
 }
+.dark .info h4{
+    color: #FEFEFE;
+}
 .mapText{
     margin: 0;
     padding: 0;
     display: flex;
     margin-top: -48px;
     margin-bottom: 10px;
+}
+.footercheck{
+    justify-content: left;
+    padding-top: 20.5px;
+    margin-left:-6px ;
+}
+.checkbox-footer{
+    width: 20px;  
+}
+.footercheck label{
+    font-size: 12px;
+    line-height: 14px;
+    color: #BDBDBD;
+    position: absolute;
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 2px;
+    margin-left: -1px;
 }
 .mapTextBold{
     font-weight: bolder;  
@@ -775,7 +879,200 @@ address a{
 
 
 
+.form-page{
+    
+    top:0%;
+    left:0%;
+    z-index: 10000 ;
+    position: fixed ;
+    width: 100% ;
+    height: 100% ;
+    background: rgba(163, 222, 240, 0.5);
+    align-items: center;
+    justify-content: center;
+   display: flex;
+}
+.displayNone{
+    display: none;
+}
+.form-page-conteiner{
+    display: flex;
+    height: 795px ;
+    width: 1200px;
+    background: #F9F9F9;
+}
+.form-page-info{
 
+    display: inline;
+}
+.form-page-info h3{
+    text-transform: uppercase;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 116.5%;
+margin-top: 100px;
+margin-left: 345px;
+letter-spacing: 0.3px;
+}
+.first-part-donate{
+    display: flex;
+    margin-top: 42px;
+        margin-left: 18.5%;
+}
+.form-fildset{
+    margin: 0px;
+    padding: 0;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-right: 60px;
+    height: 56px;
+    width:  333px;
+    size: 280px;
+    text-align: start;
+    margin-left: -5px;
+}
+.list1{
+    width: 333px;
+    height: 40px;
+    background: #F9F9F9 ;
+    border: none ;
+    color: #080707;
+    margin-bottom: 19px;
+    padding-bottom: 9px;
+    padding-left: 0px;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+}
+option{
+    background-color: #ebebeb;
+    outline:none;
+    padding: 0;
+    height: 30px;
+    width:  3325px;
+    border:0;
+    resize: none; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-legend{
+    
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 116.5%;
+color: #828282;
+border: none;
+margin-left: 10px;
+    border-left: solid 14px #F9F9F9;
+    border-right: solid 14px #F9F9F9;
+}
+.text-input{
+    width: 333px;
+    height: 30px;
+    background: #F9F9F9 ;
+    border: none ;
+    color: #080707;
+    margin-bottom: 19px;
+    padding-bottom: 9px;
+    padding-left: 0px;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+}
+.thecond-part-donate{
+    display: flex;
+    margin-top: 23px;
+    margin-left: 18%;
+}
+.thecond-part-donate h4{
+    font-weight: bold;
+font-size: 18px;
+line-height: 116.5%;
+color: #828282;
+margin-bottom: -4px;
+}
+.thecond-part-donate fieldset{
+    margin-top: 25px;
+    height: 58px;
+}
+.phone-donate{
+    display: flex;
+}
+.list2{
+    background: #F9F9F9;
+    border: none;
+    border-right: solid 1px black;
+    width: 70px;
+    height: 40px;
+    margin-left: 20px;
+    outline:none;
+    font-size: 16px;
+line-height: 116.5%;
+justify-content: left;
+}
+.text-input-tel{
+    border:none;
+    background: #F9F9F9;
+    outline:none;
+    width: 240px;
+    font-size: 18px;
+line-height: 116.5%;
+}
+.list3,.list4{
+    background: #F9F9F9;
+    border: none;
+    border-right: solid 1px black;
+    width: 144px;
+    height: 40px;
+    margin-left: 20px;
+    outline:none;
+    font-size: 16px;
+    line-height: 116.5%;
+    justify-content: left;
+}
+.donate-short-info{
+margin-top: 42px;
+margin-left: 33%;
+width: 490px;
+font-size: 13px;
+line-height: 116.5%;
+color: #828282;
+
+}
+.donate-form-btn{
+    width: 245px;
+    height: 55px;
+    background: #4BD8B5;
+    border-radius: 3px;
+    margin-left: 48.3%;
+    margin-top: 25px;
+    border: solid #49D6DF  ;
+}
+.donate-form-btn:hover{
+    background: chocolate;
+    border: solid chocolate;
+}
+.donate-form-btn  p{
+    letter-spacing: 0.8px;
+    font-weight: bolder;
+    margin-top: 13px;
+    margin-left: 0px;
+    font-size: 17px !important;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #FFFFFF !important;
+    
+}
 
 
 
@@ -793,12 +1090,12 @@ address a{
         margin-left: 12.5%;
     }
     ul.firstUL{
-        margin-top: 39px;
         margin-left:5.5%; 
     }
-    .switcher{
-        margin-top: 15px;
-        margin-left: 36.45%;
+    .checkbox {
+        opacity: 0;
+        margin-left: 35.7%;
+     
     }
 
 
@@ -984,12 +1281,11 @@ address a{
         height: 1130px;
     }
     .first_part{
-        z-index: 1000;
+        z-index: 3000;
         top:0;
         position: sticky;
-      
     }
-    header{  
+    header{
         width: 640px;
     }
     .icon{
@@ -1000,13 +1296,29 @@ address a{
     ul.firstUL{
        display: none   ;
     }
-    .switcher{
-        margin-top: 20px;
-        margin-left: 63.35%;
+    .checkbox {
+        margin: 0;
+        margin-left:62.6%;
+    
     }
+   .label{
+       margin-top: 35px;
+   }
     .burger{
-        display:inline;
-        margin: 41px 0px 0px 15%;
+    
+        margin: 41px 0px 0px 5.2%;
+    }
+    .burger.forligth{
+        display: inline;
+    }
+    .burger.fordark{
+        display: none;
+    }
+   .dark .burger.forligth{
+        display: none;
+    }
+   .dark .burger.fordark{
+        display: inline;
     }
 
 
@@ -1256,7 +1568,7 @@ address a{
         height:873px;
     }
     .first_part{
-        z-index: 1000;
+        z-index: 3000;
         top:0;
         position: sticky;
         height: 92px;
@@ -1274,13 +1586,28 @@ address a{
     ul.firstUL{
        display: none   ;
     }
-    .switcher{
-        margin-top: 17px;
-        margin-left: 35.35%;
+    .checkbox {
+        margin: 0;
+        margin-left: 25.9%;
     }
+   .label{
+       height: 20px;
+       margin-top: 34px;
+   }
     .burger{
-        display:inline;
-        margin: 38px 0px 0px 27%;
+        margin: 38px 0px 0px 7.5%;
+    }
+    .burger.forligth{
+        display: inline;
+    }
+    .burger.fordark{
+        display: none;
+    }
+   .dark .burger.forligth{
+        display: none;
+    }
+   .dark .burger.fordark{
+        display: inline;
     }
 
 
