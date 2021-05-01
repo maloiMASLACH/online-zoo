@@ -175,6 +175,9 @@ a.activehead:hover{
     transform: rotate(-20deg);
 }
 }
+
+
+
 .BurgerUl{
     z-index: 3001;
     height: 100%;
@@ -2317,6 +2320,8 @@ color: #828282;
         margin-top:6px;
     }
 
+    
+
 }
 
 
@@ -2328,7 +2333,7 @@ color: #828282;
 
 @media screen and (min-width:640px) and (max-width:1199px){ 
     body{
-        height:6406px;
+        height:6306px;
     }
     .first_part{
         z-index: 3000;
@@ -2974,6 +2979,55 @@ color: #828282;
         opacity: 0;
     
     }
+
+
+
+
+
+
+
+
+    
+
+
+
+.form-page-conteiner{
+    display: flex;
+    height: 1243px ;
+    width: 640px;
+    background: #F9F9F9;
+}
+
+.form-page-conteiner .leftimg{
+   width: 164px;
+}
+.form-page-info h3{
+margin-top: 300px;
+margin-left: 70px;
+}
+.first-part-donate{
+    display: inline;
+
+}
+.form-fildset{
+    margin: 0px;
+    padding: 0;
+   margin-left: 70px;
+   margin-bottom: 25px;
+}
+
+.thecond-part-donate{
+    display: inline;
+    margin-left: 0%;
+}
+.thecond-part-donate h4{
+    margin: 0;
+    margin-left: 70px;
+}
+.thecond-part-donate fieldset{
+    margin-top: 25px;
+    height: 58px;
+}
     
 }
 
