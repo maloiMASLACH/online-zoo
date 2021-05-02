@@ -38,12 +38,14 @@ function anaimalSlider1perehodPoClick(e){
  
   let shift;
 
-  if (window.screen.width < 640) {
-    shift = 100;
+  if (window.screen.width <= 320) {
+    shift = 132;
+  } else  if (window.screen.width < 640) {
+    shift = 122;
   } else if (window.screen.width < 1920) {
     shift = 190;
   } else {
-    shift = 166;
+    shift = 186;
   }
 
   document.querySelector(".animalsOnSlider ul").style.transform = `translateX(-${(input1.value - 2) * shift}px)`;
@@ -72,8 +74,8 @@ function slider1(){
   })
   anaimalSlider1[input1.value-1].classList.add("active")
   let shift;
-  if (window.screen.width < 320) {
-    shift = 192;
+  if (window.screen.width <= 320) {
+    shift = 132;
   } else  if (window.screen.width < 640) {
     shift = 122;
   } else if (window.screen.width < 1920) {
