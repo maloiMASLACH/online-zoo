@@ -32,7 +32,9 @@ body.dark {
 .part{
     transition: 1s;
 }
-
+button{
+    outline: none;
+}
 
 
 
@@ -528,6 +530,9 @@ a.activehead:hover{
     margin-top: -48px;
     margin-bottom: 10px;
 }
+.dark .mapText p{
+    color: #F2F2F2;
+}
 .footercheck{
     justify-content: left;
     padding-top: 20.5px;
@@ -946,8 +951,15 @@ address a{
     justify-content: center;
    display: flex;
 }
+.form-page:not(.displayNone){
+    opacity:1;
+    transition: 0.2s;  
+}
 .displayNone{
-    display: none;
+  overflow: hidden;
+  pointer-events: none;
+   opacity:0;
+   transition: 0.2s;
 }
 .form-page-conteiner{
     display: flex;

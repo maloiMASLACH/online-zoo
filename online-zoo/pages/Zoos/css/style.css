@@ -31,7 +31,9 @@ body.dark {
     transition: 1s;
 }
 
-
+button{
+    outline: none;
+}
 
 
 
@@ -813,8 +815,15 @@ address a{
     justify-content: center;
    display: flex;
 }
+.form-page:not(.displayNone){
+    opacity:1;
+    transition: 0.2s;  
+}
 .displayNone{
-    display: none;
+  overflow: hidden;
+  pointer-events: none;
+   opacity:0;
+   transition: 0.2s;
 }
 .form-page-conteiner{
     display: flex;
