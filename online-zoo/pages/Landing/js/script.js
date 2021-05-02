@@ -73,7 +73,7 @@ function slider1(){
   anaimalSlider1[input1.value-1].classList.add("active")
   let shift;
   if (window.screen.width < 320) {
-    shift = 122;
+    shift = 152;
   } else  if (window.screen.width < 640) {
     shift = 122;
   } else if (window.screen.width < 1920) {
