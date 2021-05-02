@@ -1,12 +1,12 @@
+
+
+
+
+
+
+// Switct theme
 const parts =document.querySelectorAll('.part');
 const switcher = document.querySelector('header .checkbox');
-const donate =document.querySelectorAll('.formbtn');
-const donend =document.querySelector('.donate-form-btn')
-const burger =document.querySelectorAll('.burger');
-const burgerM =document.querySelector('.BurgerUl');
-const anaimalSlider1 =document.querySelectorAll('.animalsOnSlider ul li');
-const input1 = document.querySelector('.ponzynokNull');
-const output1 =document.querySelector('.counternull output' );
 
 function switchteme () {
   if (switcher.checked){
@@ -15,6 +15,13 @@ function switchteme () {
     parts.forEach(parts =>  parts.classList.remove("dark"))  
   }
 }
+
+switcher.addEventListener('click',switchteme)
+
+// Donate
+const donate =document.querySelectorAll('.formbtn');
+const donend =document.querySelector('.donate-form-btn')
+
 function donateform(){
 document.querySelector('.form-page').classList.remove("displayNone")
 }
@@ -22,11 +29,31 @@ function EndDonate(){
     document.querySelector('.form-page').classList.add("displayNone")  
  //   alert("Operation comleate. Thank You") 
 }
+
+donate.forEach(donate => donate.addEventListener('click',donateform));
+donend.addEventListener('click',EndDonate)
+
+
+
+// Burger
+const burger =document.querySelectorAll('.burger');
+const burgerM =document.querySelector('.BurgerUl');
+
 function burgermenu(){
   if (burgerM.classList[2]=="activeB")  
   {burgerM.classList.remove("activeB")}
   else{burgerM.classList.add("activeB")}
 }
+
+burger.forEach(burger => burger.addEventListener('click',burgermenu));
+
+
+// First Slider
+const anaimalSlider1 =document.querySelectorAll('.animalsOnSlider ul li');
+const input1 = document.querySelector('.ponzynokNull');
+const output1 =document.querySelector('.counternull output' );
+
+
 function anaimalSlider1perehodPoClick(e){
   anaimalSlider1.forEach(anaimalSlider1 =>{
     anaimalSlider1.classList.remove("active")
@@ -85,7 +112,7 @@ function slider1(){
   }
 
 
-    document.querySelector(".animalsOnSlider ul").style.transform = `translateX(-${(input1.value - 2) * shift}px)`;
+   document.querySelector(".animalsOnSlider ul").style.transform = `translateX(-${(input1.value - 2) * shift}px)`;
     for (let i = 0; i < input1.value - 2; i++) {
       if (anaimalSlider1[i] && !anaimalSlider1[i].classList.contains("hide-slide")) {
         anaimalSlider1[i].classList.add("hide-slide");
@@ -100,10 +127,25 @@ function slider1(){
     }
   
 }
-
 input1.addEventListener('input',slider1)
 anaimalSlider1.forEach((anaimalSlider1) => anaimalSlider1.addEventListener('click',anaimalSlider1perehodPoClick));
-burger.forEach(burger => burger.addEventListener('click',burgermenu));
-switcher.addEventListener('click',switchteme)
-donate.forEach(donate => donate.addEventListener('click',donateform));
-donend.addEventListener('click',EndDonate)
+
+
+
+//thecond slider
+
+const thecondSlide= document.querySelectorAll('.thirdPartImg')
+const input2 = document.querySelector('.ponzynokFirst');
+const output2 =document.querySelector('.counterFirst output' );
+
+function thecondSlide2(){
+
+  thecondSlide.forEach(thecondSlide =>{
+    thecondSlide.classList.remove("notHide3")
+  })
+  thecondSlide[input2.value-1].classList.add("notHide3")
+}
+
+input2.addEventListener('input',thecondSlide2)
+
+

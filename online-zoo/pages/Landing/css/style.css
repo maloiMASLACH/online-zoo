@@ -445,10 +445,12 @@ margin-left:931px;
     display: flex;
     align-items:center;
     margin-top: -2px;
+    transition: 1s;
+    
     
 }
 .animalsOnSlider  ul li{
-    transition: 0.5s;
+    transition: 1s;
     margin-right:-55px;
 }
 
@@ -597,14 +599,48 @@ letter-spacing: 0.2px;
     color: rgba(254, 254, 254, 1);
 
 }
-.dearImg{
-    background-image: url(../../../assets/images/di.png);
+.thirdPartImg{
     width: 790px;
     height: 323px;
 margin-top: 29px;
 margin-bottom: 7px;
+display: none;
 }
-
+.thirdPartImgCon{
+    flex-direction: column;
+    display:flex;
+}
+.notHide3{
+    animation: hide3 3s;  
+    display: flex;
+}
+@keyframes hide3 {
+0%{
+    display: flex;
+    opacity: 0;
+}
+25%{
+    opacity: 0.7;
+}
+75%{
+    opacity: 0.9;
+}
+100%{
+    opacity: 1;
+}
+}
+.dearImg{
+    background-image: url(../../../assets/images/di.png);
+}
+.pandaImg{
+    background-image: url(../../../assets/images/trirdPanda.png);
+}
+.monkeyImg{
+    background-image: url(../../../assets/images/trirdMonkey.png);
+}
+.gorillaImg{
+    background-image: url(../../../assets/images/thirdGorila.png);
+}
 .counterFirst{
     margin-top: 30px;
     margin-left: 35.6%;
@@ -2012,6 +2048,10 @@ color: #828282;
     .pandaslider .animalShortInfo{
         margin-top: 235px;
     }
+    .pandaslider .animalbtn2,
+    .pandaslider .animalbtn{
+    margin-top: 285px;
+    }
     .ponzynokNull{
         margin-left: 8.1%;
     }
@@ -2051,7 +2091,7 @@ color: #828282;
       width: 750px;
       line-height: 16.5px;
     }
-    .dearImg{
+    .thirdPartImg{
         margin-top: 0px;
         margin-left: 22px;
     width: 746px;
@@ -2580,19 +2620,22 @@ margin-top: 235px;
          width: 600px;
          line-height: 16.5px;
        }
-       .dearImg{
-           background-image: url(../../../assets/images/di2.png);
+       .thirdPartImg{
+
            margin-top: 30px;
            margin-left: 3%  ;
             width: 600px;
             height: 323px;
        }
+       .dearImg{
+        background-image: url(../../../assets/images/di2.png);
+    }
        .counterFirst{
            margin-top: 6px;
-           margin-left: -6px;
+           margin-left: 32%;
        }
        .counterFirst .Smax{
-        margin-left:-42.5% !important;
+        margin-left:-42.5%;
        }
        .ponzynokFirstBlock{
        margin-right: 166px;
@@ -2612,7 +2655,7 @@ margin-top: 235px;
        margin-top: 17px;
        margin-right: 21px;
        }
-
+       
 
 
 
@@ -3407,19 +3450,28 @@ margin-top: 235px;
          width: 300px;
          line-height: 16.5px;
        }
-       .dearImg{
-           background-image: url(../../../assets/images/di2.png);
+       
+       .thirdPartImg{
            margin-top: 32px;
            margin-left: 3%  ;
             width: 300px;
             height: 321px;
        }
+       .dearImg{
+           background-image: url(../../../assets/images/di2.png);
+       }
        .counterFirst{
            margin-top: 24px;
-           margin-left: -16px;
+           margin-left: 11%;
+       }
+       .counterFirst .chislo{
+           margin-left: 35%;
+       }
+       .counterFirst .Dnow{
+        margin-top: -15px;
        }
        .counterFirst .Smax{
-        margin-left:-33.5% !important;
+        margin-left:-33.5% ;
        }
        .ponzynokFirst{
            margin-left: 3.4%;
