@@ -149,3 +149,62 @@ function thecondSlide2(){
 input2.addEventListener('input',thecondSlide2)
 
 
+
+
+
+
+
+
+
+
+// Pet slider
+const ThirdSlide= document.querySelectorAll('.pets-in-zoo-slider-con')
+const input3 = document.querySelector('.ponzynokThecond');
+const output3 =document.querySelector('.thecondCounter output' );
+const thirdArrows =document.querySelectorAll('.thecondSlider .arrow')
+function ThirdSlide3(){
+
+  ThirdSlide.forEach(ThirdSlide =>{
+    ThirdSlide.classList.remove("showPets")
+  })
+  ThirdSlide[input3.value-1].classList.add("showPets")
+}
+
+function thirdsliderClick(e){
+  ThirdSlide.forEach(ThirdSlide =>{
+    ThirdSlide.classList.remove("showPets")
+    
+  })
+  
+  if(e.path[1].classList.contains("left")){
+    if (input3.value==1){
+      input3.value=8;
+    }else{
+      input3.value=input3.value-1
+    }
+    ThirdSlide[input3.value-1].classList.add("showPets")
+  
+  output3.value='0'+input3.value
+  console.log(input3.value)
+}
+console.log(e.path[1].classList)
+if(e.path[1].classList.contains("right")){
+if (input3.value==8){
+  input3.value=1;
+}else{
+  input3.value++
+}
+
+  ThirdSlide[input3.value-1].classList.add("showPets")
+
+output3.value='0'+input3.value
+console.log(input3.value)
+}
+}
+
+thirdArrows.forEach((thirdArrows) => thirdArrows.addEventListener('click',thirdsliderClick));
+input3.addEventListener('input',ThirdSlide3)
+
+
+
+

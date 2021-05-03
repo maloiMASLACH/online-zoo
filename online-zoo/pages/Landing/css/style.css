@@ -836,6 +836,30 @@ letter-spacing: 0.6px;
     align-items: center;
     justify-content: center;
 }
+.pets-in-zoo-slider-con{
+    display: none;
+}
+.showPets{
+    animation: hideP 3s;  
+    display: flex;
+}
+@keyframes hideP {
+0%{
+    display: flex;
+    opacity: 0;
+}
+25%{
+    transform: scale(1.03);
+    opacity: 0.7;
+}
+75%{
+    transform: scale(1);
+    opacity: 0.9;
+}
+100%{
+    opacity: 1;
+}
+}
 .thecondSlider li.pet{
     margin-right: 29.4px;
 }
@@ -846,6 +870,9 @@ letter-spacing: 0.6px;
     margin-left: -20px;
     padding-right:7px ;
     padding-left: 10px;
+}
+.thecondSlider li.arrow img{
+    padding: 10px;
 }
 .thecondSlider li.arrow-light{
     display: none;
@@ -2770,10 +2797,14 @@ margin-top: 235px;
             margin-left: -25px;
         }
         .thecondCounter{
-            margin-left: -2px;
-            margin-top: -8px;
+            margin-left: 26%;
+            margin-top: 30px;
             padding-top: 0;
             padding-left: 6px;
+        }
+        .thecondCounter .chislo{
+           
+            margin-left: 25%;
         }
         .choose{
             margin-top: 45px;
@@ -3612,10 +3643,13 @@ margin-top: 235px;
             margin-left: -25px;
         }
         .thecondCounter{
-            margin-left: -4px;
-            margin-top: -13px;
+            margin-left: 5%;
+            margin-top: 20px;
             padding-top: 0;
             padding-left: 6px;
+        }
+        .thecondCounter .chislo{
+            margin-left: 37%;
         }
         .choose{
             margin-top: 37px;
