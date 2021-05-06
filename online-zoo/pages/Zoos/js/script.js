@@ -1,9 +1,8 @@
+//Switcher
 const parts =document.querySelectorAll('.part');
 const switcher = document.querySelector('header .checkbox');
-const donate =document.querySelectorAll('.formbtn');
-const donend =document.querySelector('.donate-form-btn')
-const burger =document.querySelectorAll('.burger');
-const burgerM =document.querySelector('.BurgerUl');
+
+
 
 function switchteme () {
   if (switcher.checked){
@@ -12,12 +11,28 @@ function switchteme () {
     parts.forEach(parts =>  parts.classList.remove("dark"))  
   }
 }
+switcher.addEventListener('click',switchteme)
+
+
+/// Donate
+const donate =document.querySelectorAll('.formbtn');
+const donend =document.querySelector('.donate-form-btn')
+
+
 function donateform(){
 document.querySelector('.form-page').classList.remove("displayNone")
 }
 function EndDonate(){
     document.querySelector('.form-page').classList.add("displayNone")   
 }
+donate.forEach(donate => donate.addEventListener('click',donateform));
+donend.addEventListener('click',EndDonate)
+
+//Burger
+
+const burger =document.querySelectorAll('.burger');
+const burgerM =document.querySelector('.BurgerUl');
+
 
 function burgermenu(){
   if (burgerM.classList[2]=="activeB")  
@@ -26,6 +41,23 @@ function burgermenu(){
 }
 
 burger.forEach(burger => burger.addEventListener('click',burgermenu));
-switcher.addEventListener('click',switchteme)
-donate.forEach(donate => donate.addEventListener('click',donateform));
-donend.addEventListener('click',EndDonate)
+
+//slider
+
+
+
+const frames= document.querySelectorAll('iframe')
+const covers= document.querySelectorAll('.cover')
+function video(e){
+  console.log(e.path[0].id)
+if(!e.path[0].classList.contains("main")){
+  
+  let vrem=frames[e.path[0].id].src
+  frames[e.path[0].id].src=frames[0].src
+  frames[0].src=vrem
+}
+}
+
+
+
+covers.forEach(covers => covers.addEventListener('click',video))
