@@ -394,6 +394,15 @@ width: 10px !important;
     overflow: scroll;
    
 }
+.firstdot{
+    padding-left: 17%;
+}
+.theconddot{
+    padding-left: 47%;
+}
+.thirddot{
+    padding-left: 15%;
+}
 .lineOnAnimalSlider{
     position: absolute;
 width: 1060px;
@@ -420,13 +429,14 @@ overflow: hidden;
     border: solid 1px #FFFFFF ;
 }
 .line{
-    position: relative;
+    position: absolute;
     width: 1063px;
     height: 1px;
     background-color: #FEFEFE;
     margin: 6.5px 0px 0px 6.5px;
     overflow: hidden;
 }
+
 .animalsOnSlider{
     
     position: relative;
@@ -2031,7 +2041,7 @@ color: #828282;
         padding:66px 0px 0px 12.55%;
     }
     .lineOnAnimalSlider{
-       width: 560px; 
+       width: 740px; 
     margin-top: 339px ;
     margin-left:479px;
 
@@ -2040,6 +2050,15 @@ color: #828282;
        margin: 0;
     margin-left:593px;
     margin-top: 100px;
+    }
+    .firstdot{
+        padding-left: 37%;
+    }
+    .theconddot{
+        padding-left: 47%;
+    }
+    .thirddot{
+        padding-left: 15%;
     }
     .animalsOnSlider  ul{
     
@@ -2567,9 +2586,18 @@ color: #828282;
         margin-top: -11px;
     }
     .lineOnAnimalSlider{ 
-        width: 300px;   
+        width: 500px;   
     margin-top: 304px ;
     margin-left:52px;
+    }
+    .firstdot{
+        padding-left: 12%;
+    }
+    .theconddot{
+        display: none;
+    }
+    .thirddot{
+        display: none;
     }
     .animalsOnSlider{
        margin: 0;
@@ -3305,6 +3333,15 @@ width: 335px;
         margin-left: 1px;
         margin-top: -15px;
         
+    }
+    .firstdot{
+        display: none;
+    }
+    .theconddot{
+        display: none;
+    }
+    .thirddot{
+        display: none;
     }
     .lineOnAnimalSlider{ 
         width: 150px;   
