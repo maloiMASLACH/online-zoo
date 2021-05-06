@@ -51,7 +51,7 @@ const thecondSlide= document.querySelectorAll('.thecondSlider li.pet')
 const input = document.querySelector('.ponzynokThird');
 const output =document.querySelector('.thirdCounter output' );
 const Arrows =document.querySelectorAll('.thecondSlider .arrow')
-
+const points=document.querySelectorAll('.point')
 function thecondSlide2(){
 
   thecondSlide.forEach(thecondSlide =>{
@@ -60,7 +60,7 @@ function thecondSlide2(){
   thecondSlideIMG.forEach(thecondSlideIMG =>{
     thecondSlideIMG.classList.remove("activeimg")
   })
-  let points=document.querySelectorAll('.point')
+
   points.forEach(points => points.classList.remove("act"))
   if(input.value<5){
   document.querySelector(`.mapPoint${input.value}`).classList.add("act")
@@ -107,12 +107,16 @@ function sliderClick(e){
   thecondSlideIMG.forEach(thecondSlideIMG =>{
     thecondSlideIMG.classList.remove("activeimg") 
   })
-
-  let points=document.querySelectorAll('.point')
-  points.forEach(points => points.classList.remove("act"))
-  if(input.value<5){
-  document.querySelector(`.point${input.value}`).classList.add("act")
+  console.log(e)
+if(e.path[2].classList.contains("pet")){
+  e.path[0].classList.add("activeimg")
+  e.path[2].classList.add("activeimg")
+  input.value=e.path[2].value
+  output.value='0'+input.value
 }
+
+  
+ 
 
   if(e.path[1].classList.contains("left")){
     if (input.value==1){
@@ -123,7 +127,7 @@ function sliderClick(e){
     thecondSlide[input.value-1].classList.add("activeimg")
     thecondSlideIMG[input.value-1].classList.add("activeimg")
   output.value='0'+input.value
-  console.log(input.value)
+  
 }
 console.log(e.path[1].classList)
 if(e.path[1].classList.contains("right")){
@@ -168,15 +172,25 @@ else{
 }
 }
 }
-
-
-
+points.forEach(points => points.classList.remove("act"))
+if(input.value<5){
+document.querySelector(`.mapPoint${input.value}`).classList.add("act")
+}
+}
+function pointClick(){
+  thecondSlide.forEach(thecondSlide =>{
+    thecondSlide.classList.remove("activeimg") 
+  })
+  thecondSlideIMG.forEach(thecondSlideIMG =>{
+    thecondSlideIMG.classList.remove("activeimg") 
+  })
+  console.log(points)
 }
 
 input.addEventListener('input',thecondSlide2)
 Arrows.forEach(Arrows => Arrows.addEventListener('click',sliderClick))
-
-
+thecondSlideIMG.forEach(thecondSlideIMG => thecondSlideIMG.addEventListener('click',sliderClick))
+points.forEach(points => points.addEventListener('click',pointClick))
 
 
 
