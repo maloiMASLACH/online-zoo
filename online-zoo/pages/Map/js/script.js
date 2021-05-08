@@ -193,6 +193,29 @@ thecondSlideIMG.forEach(thecondSlideIMG => thecondSlideIMG.addEventListener('cli
 points.forEach(points => points.addEventListener('click',pointClick))
 
 
+// Watch online
 
 
+const watchPoints=document.querySelectorAll('.mapCon a')
+const watchBTN=document.querySelector('.btnWatch')
 
+function watch(){
+  let ac=1
+for( let q=0;q<watchPoints.length;q++)
+if(thecondSlide[q].classList.contains("activeimg")){
+ac=q
+console.log(ac)
+}
+if(ac==0){
+  watchBTN.href="../../Zoos/html/index4.html"
+}
+if(ac==2){
+  watchBTN.href="../../Zoos/html/index3.html"
+}
+if(ac==3){
+  watchBTN.href="../../Zoos/html/index2.html"
+}
+}
+
+
+watchBTN.addEventListener('click',watch)

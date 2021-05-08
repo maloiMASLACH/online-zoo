@@ -156,9 +156,12 @@ a.activehead:hover{
 .checkbox:checked + .label {
     background-color: #c7c7c7;
 }
+.dark .checkbox:checked + .label {
+    background-color: #414141;
+}
 
 .checkbox:checked + .label .ball {
-    background-color: #4f4f4f;
+    background-color: #000000;
     color: #1b1b1b;
     transform: translateX(22px);
 }
@@ -311,6 +314,7 @@ a.activehead:hover{
     width: 157px;
     height: 157px;
     margin: -2px 4px 0 -25px;
+    transition: 0s !important;
 }
 .thecondSlider li.pet img{
     width: 108px;
@@ -330,6 +334,9 @@ a.activehead:hover{
     transform: scale(1.27);
     
     
+}
+.dark .thecondSlider li.pet img.activeimg{
+    border: solid 5.5px #4F4F4F; 
 }
 
 .thecondSlider li.arrow{

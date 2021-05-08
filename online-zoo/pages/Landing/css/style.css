@@ -152,9 +152,12 @@ a.activehead:hover{
 .checkbox:checked + .label {
     background-color: #c7c7c7;
 }
+.dark .checkbox:checked + .label {
+    background-color: #414141;
+}
 
 .checkbox:checked + .label .ball {
-    background-color: #4f4f4f;
+    background-color: #000000;
     color: #1b1b1b;
     transform: translateX(22px);
 }
